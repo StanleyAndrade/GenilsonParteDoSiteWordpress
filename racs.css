@@ -1,0 +1,66 @@
+/*GERAL = racs.html e rac1.html ao rac10.html*/
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quando&display=swap');
+
+#div_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    width: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+/*Página racs.html*/
+
+#img_losango_racs{
+    width: 70%;
+}
+
+.div_class_rac{
+    padding: 30px;
+}
+
+.blocos{
+    display: flex;
+    flex-direction: column;
+}
+.bloco{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Páginas individuais - rac1.html ao rac10.html*/
+
+#img_losang_rac1a10{
+    width: 10%;
+    padding: 2%;
+}
+
+#div_baixar_fazerprova{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn_baixar{
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#btn_prova{
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/*Responsividade racs.html*/
+@media(max-width:950px){
+
+}
+
+/*Responsividade rac1.html ap rac10.html*/
