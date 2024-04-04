@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presença</title>
+    <link rel="stylesheet" href="/src/assets/css/presenca.css">
+</head>
+<body>
+    <div id="pag1">
+        <div id="img"><img src="https://cestsegtrabalho.com.br/wp-content/uploads/2022/09/logo-e1663851774609.png" width="28%"></div>
+        <div id="div-presenca">
+            <h1>Lista de Presença</h1>
+            <p id="paragrafo">Preencha para confirmar a sua presença</p>
+            <form action="">
+                <input type="text" placeholder="Nome Completo" id="nome" required><br>
+                <input type="text" placeholder="CPF" id="cpf" required><br>
+                <input type="text" placeholder="Empresa (Opicional)" id="empresa"><br>
+                <input type="text" placeholder="Treinamento" id="treinamento"><br>
+                <input type="text" placeholder="Carga Horária" id="cargahoraria"><br>
+                <b>Data</b>
+                <input type="date" id="date"><br>
+                <input id="btn-form" type="submit" value="Confirmar e Imprimir Comprovante">
+            </form>
+        </div>
+    </div>
+
+    <div id="pag2" style="display: none;" >
+        <div id="img"><img src="https://cestsegtrabalho.com.br/wp-content/uploads/2022/09/logo-e1663851774609.png" width="28%"></div>
+        <h1 >Lista de Presença</h1>
+        <span id="msg"></span>
+    </div>
+
+    <script>
+
+
+        //Evento + função  
+        var btn = document.querySelector('#btn-form')
+        btn.addEventListener('click', (event) => {
+            
+            //recebe os dados dos inputs
+            var nome = document.getElementById('nome').value
+            var cpf = document.getElementById('cpf').value
+            var empresa = document.getElementById('empresa').value
+            var data = document.getElementById('date').value
+            var treinamento = document.getElementById('treinamento').value
+            var cargahoraria = document.getElementById('cargahoraria').value
+
+            var mensagem = `
+            <b>Lista de presença do aluno(a):</b> <br>
+            Nome do aluno: ${nome} <br>
+            Carga Horária: ${cargahoraria} <br>
+            Data: ${data} <br>
+            CPF do aluno: ${cpf} <br>
+            Treinamento: ${treinamento} <br>
+            Empresa: ${empresa} <br>
+            <br>
+            <br>
+            Ass.: _____________________________________________
+            <br><br><br>
+            <button onclick="window.print()">imprimir</button>
+            `
+            //faz pag1 desaparecer
+            document.getElementById('msg').innerHTML = mensagem
+            var display = document.getElementById('pag1').style.display;
+            if (display == "none") {
+                document.getElementById('pag1').style.display = 'block';
+            } else {
+                document.getElementById('pag1').style.display = 'none';
+            }
+
+            //faz pag2 aparecer
+
+            var display = document.getElementById('pag2').style.display;
+            if (display == "none") {
+                document.getElementById('pag2').style.display = 'block';
+            } else {
+                document.getElementById('pag2').style.display = 'block';
+            }
+
+            setTimeout(() => {
+            window.print()
+            }, 1000)
+            event.preventDefault()
+        })
+        
+        function presenca(){
+            //recebe os dados dos inputs
+            var nome = document.getElementById('nome').value
+            var cpf = document.getElementById('cpf').value
+            var empresa = document.getElementById('empresa').value
+
+            var mensagem = `
+            Comprovante de presença do aluno(a): ${nome}, <br>
+            sob o CPF ${cpf}.<br>
+            ${empresa}
+            <br>
+            <br>
+            Ass.: _____________________________________________
+            <br><br><br>
+            <button onclick="window.print()">imprimir</button>
+
+            `
+            //faz pag1 desaparecer
+            document.getElementById('msg').innerHTML = mensagem
+            var display = document.getElementById('pag1').style.display;
+            if (display == "none") {
+                document.getElementById('pag1').style.display = 'block';
+            } else {
+                document.getElementById('pag1').style.display = 'none';
+            }
+
+            //faz pag2 aparecer
+
+            var display = document.getElementById('pag2').style.display;
+            if (display == "none") {
+                document.getElementById('pag2').style.display = 'block';
+            } else {
+                document.getElementById('pag2').style.display = 'block';
+            }
+
+            setTimeout(() => {
+            window.print()
+            }, 1000)   
+        }
+    </script>
+
+    <style>
+        #pag2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    </style>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+#img_losango{
+    width: 50%;
+}
+
+#img_losangoA{
+    width: 85%;
+}
+
+#img_losangoB{
+    width: 230%;
+}
+
+#img_losangoC{
+    width: 30%;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.bloco1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.text{
+    text-align: center;
+}
+
+@media(max-width:950px){
+    #img_losango{
+        width: 96%;
+    }
+    #img_losangoA{
+        width: 95%;
+    }
+}
