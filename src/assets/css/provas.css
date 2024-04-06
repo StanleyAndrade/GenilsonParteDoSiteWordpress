@@ -6,12 +6,22 @@
     width: 85%;
 }
 
+#img_losangoC{
+    width: 85%;
+    background-color: white;
+}
+
 #img_losangoB{
     width: 230%;
 }
 
 #img_losangoC{
     width: 30%;
+}
+
+.div_class_losangoA{
+    background-color: white;
+    display: none;
 }
 
 .bloco{
@@ -31,11 +41,22 @@
     text-align: center;
 }
 
+.puro{
+    background-color: white;
+}
+
 @media(max-width:950px){
     #img_losango{
         width: 96%;
     }
     #img_losangoA{
         width: 95%;
+    }
+    #img_losangoC{
+        width: 85%;
+    }
+
+    .div_class_losangoA{
+        width: 10%;
     }
 }

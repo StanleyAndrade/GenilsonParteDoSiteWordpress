@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAC 01</title>
+    <title>RAC 02</title>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body class="class_body">
     <img src="https://cestsegtrabalho.com.br/wp-content/uploads/2022/09/logo-e1663851774609.png" width="40%">
-    <h1>RAC 01</h1>
+    <h1>RAC 02</h1>
     <h3><b>Preencha os dados abaixo e faça a prova <br>
-        Nota mínima 80% <br>
-        Após aprovação já está registrado</h3><br>
+            Nota mínima 80% <br>
+            Após aprovação já está registrado</h3><br>
     <form id="submit" action="#" name="form-contact">
         <input type="text" id="name" placeholder="Nome completo:" required><br>
         <input type="text" id="whatsapp" placeholder="Whatsapp:" required><br>
         <input type="email" id="email" placeholder="Email:" required><br>
         <input type="text" id="nome_empresa" placeholder="Nome da empresa: (Opcional)"><br>
         <input type="text" id="cpf" placeholder="CPF:" required><br>
-        <br> Data <br>
+        <br> <b> Data </b> <br>
         <input type="date" id="data_Genilson"><br><br>
-        <input type="submit" value="Fazer Prova" id="submit">
+        <input type="submit" value="Enviar" id="submit">
     </form>
-
-    </div>
-
+    <script src="./index.js"></script>
     <script>
         //mostra elemento oculto / oculta o elementro visivel
         function ExibirElementOculto() {
@@ -70,11 +68,11 @@
             let ebody = `
             <div><img src="https://cestsegtrabalho.com.br/wp-content/uploads/2022/09/logo-e1663851774609.png" width="100%"></div>
             <br><br>
-            <h3>O aluno ${name.value} concluiu a prova de RAC 01 conforme treinamento com nota 10</h3>
+            <h3>O aluno ${name.value} concluiu a prova de RAC 02 conforme treinamento com nota 10</h3>
             <br><br>
             <h3 style="margin: 0%;">Nome do aluno:</h3>${name.value}
             <br><br>
-            <h3>Nome do curso: RAC 01</h3>
+            <h3>Nome do curso: RAC 02</h3>
             <h3 style="margin: 0%;">Whatsapp do aluno:</h3>${whatsapp.value}
             <br><br>
             <h3 style="margin: 0%;">Email do aluno: </h3>${email.value}
@@ -95,7 +93,7 @@
                 Subject : "O aluno concluiu a prova",
                 Body : ebody
             }).then(
-                window.location.href = '/src/provas/provas-racs/prova-rac1.html', 
+                window.location.href = '/src/provas/provas-racs/prova-rac2.html', 
                 setLocalStorage()
             );
         });
