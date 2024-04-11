@@ -35,6 +35,10 @@ h1{
     width: 125%;
 }
 
+#img_losango_racsExtra{
+    width: 500%;
+}
+
 .div_class_rac{
     padding: 30px;
 }
@@ -84,6 +88,7 @@ h1{
     #img_losango_racs{
         width: 100%;
     }
+
     .blocos{
         display: flex;
         flex-direction: row;
@@ -121,6 +126,10 @@ h1{
         padding: 10px;
         margin: 20px;
 
+    }
+
+    #img_losango_racsExtra{
+        width: 110%;
     }
 
 
