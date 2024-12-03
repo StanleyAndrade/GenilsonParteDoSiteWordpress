@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.coluna1-father{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1ABC9C;
+    padding: 0px;
+    margin: 0px;
+}
+
+.alinharColuna{
+    padding-right: 15px;
+}
+
+.imglogo{
+    width: 300px;
+}
+
+.imgmao{
+    width: 200px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+h5{
+    font-size: 20px;
+}

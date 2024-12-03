@@ -14,7 +14,7 @@
     <h1>BOBCAT - Mini pá carregadeira</h1>
     <h3><b>Preencha os dados abaixo e faça a prova <br>
             Nota mínima 80% <br>
-            Após aprovação já está registrado</h3><br>
+            Após aprovação já está registrado</b></h3><br>
     <form id="submit" action="#" name="form-contact">
         <input type="text" id="name" placeholder="Nome completo:" required><br>
         <input type="text" id="whatsapp" placeholder="Whatsapp:" required><br>
@@ -28,50 +28,35 @@
     <script src="./index.js"></script>
 
     <script>
-        //mostra elemento oculto / oculta o elementro visivel
-        function ExibirElementOculto() {
-                    var display = document.getElementById('formProva').style.display;
-                    if (display == "none") {
-                        document.getElementById('formProva').style.display = 'block';
-                    } else {
-                        document.getElementById('formProva').style.display = 'none';
-                    }
-        }
+function setLocalStorage() {
+    localStorage.setItem("name", name.value)
+    localStorage.setItem("cpf", cpf.value)
+}
+//Cria variáveis que recebem os valores dos inputs
+const name = document.getElementById('name');
+const whatsapp = document.getElementById('whatsapp');
+const email = document.getElementById('email');
+const nome_empresa = document.getElementById('nome_empresa');
+const cpf = document.getElementById('cpf');
+const datadehoje = document.getElementById('data');
+const submit = document.getElementById('submit');
+const dataGenilson = document.getElementById('data_Genilson');
 
-        //LocalStorage
-        function setLocalStorage() {
-            localStorage.setItem("name", name.value)
-            localStorage.setItem("cpf", cpf.value)
-        }
+//Pega dia e hora e coloca na variável dataAtual
+const data = new Date()
+const dia = String(data.getDate()).padStart(2, '0') //trasforma 1 em 01
+const mes = String(data.getMonth() + 1).padStart(2, '0') //trasforma 1 em 01
+const ano = data.getFullYear() // 2023
+const hora = String(data.getHours()).padStart(2, '0') //trasforma 1 em 01
+const minuto = String(data.getMinutes()).padStart(2, '0') //trasforma 1 em 01
+const segundo = String(data.getSeconds()).padStart(2, '0') //trasforma 1 em 01
+const dataAtual = `Aluno concluiu a prova em ${dia}/${mes}/${ano} às ${hora}:${minuto}:${segundo}`
 
-        //Cria variáveis que recebem os valores dos inputs
-        const name = document.getElementById('name');
-        const whatsapp = document.getElementById('whatsapp');
-        const email = document.getElementById('email');
-        const nome_empresa = document.getElementById('nome_empresa');
-        const cpf = document.getElementById('cpf');
-        const datadehoje = document.getElementById('data');
-        const submit = document.getElementById('submit');
-        const dataGenilson = document.getElementById('data_Genilson');
-
-        //atribui variavel ao arquivo global que pega nome e cpf
-        nome_aluno = name
-
-        //Pega dia e hora e coloca na variável dataAtual
-        const data = new Date()
-        const dia = String(data.getDate()).padStart(2, '0') //trasforma 1 em 01
-        const mes = String(data.getMonth() + 1).padStart(2, '0') //trasforma 1 em 01
-        const ano = data.getFullYear() // 2023
-        const hora = String(data.getHours()).padStart(2, '0') //trasforma 1 em 01
-        const minuto = String(data.getMinutes()).padStart(2, '0') //trasforma 1 em 01
-        const segundo = String(data.getSeconds()).padStart(2, '0') //trasforma 1 em 01
-        const dataAtual = `Aluno concluiu a prova em ${dia}/${mes}/${ano} às ${hora}:${minuto}:${segundo}`
-
-        //corpo do email com tudo que será enviado para o Email
-        submit.addEventListener('submit',(e)=>{
+        // Corpo do email com tudo que será enviado para o Email
+        submit.addEventListener('submit', (e) => {
             e.preventDefault();
-            let ebody = `
-            <div><img src="https://cestsegtrabalho.com.br/wp-content/uploads/2022/09/logo-e1663851774609.png" width="100%"></div>
+            let ebody = 
+            `<div><img src="https://cestsegtrabalho.com.br/wp-content/uploads/2022/09/logo-e1663851774609.png" width="100%"></div>
             <br><br>
             <h3>O aluno ${name.value} concluiu a prova de C conforme treinamento com nota 10</h3>
             <br><br>
@@ -86,35 +71,34 @@
             <br><br>
             <h3 style="margin: 0%;">Nome da Empresa (Opcional): </h3>${nome_empresa.value}
             <br><br>
-            
-            <br><br>
-        <h3 style="font-weight: bold;">Data: </h3>${dataGenilson.value}
-            `;
-            const enviarDados = async ()  =>  {
-            try {
-                const curso = document.title
-                const response = await axios.post('http://192.168.247.108:8080/dobrascutaneas/criar', { subescapular: name.value, peitoral: email.value, triciptal: whatsapp.value, abdominal: curso})
-                console.log('Perimetria cadastrada com sucesso');
-            } catch (error) {
-                console.error('Erro ao criar Perimetria: ', error);
-            }
-            }
+            <h3 style="font-weight: bold;">Data: </h3>${dataGenilson.value};`;
+
+            const enviarDados = async () => {
+                try {
+                    const curso = document.title;
+                    const response = await axios.post('https://app.cestsegtrabalho.com.br/dobrascutaneas/criar', { subescapular: name.value, peitoral: email.value, triciptal: whatsapp.value, abdominal: curso });
+                    console.log('Perimetria cadastrada com sucesso');
+                } catch (error) {
+                    console.error('Erro ao criar Perimetria: ', error);
+                }
+            };
 
             Email.send({
-                SecureToken : "58bc9bda-20b7-472d-9522-6edc923b7f69", //add your token here
-                To : 'cestsegtrabalho@gmail.com', //pode colocar email.value e será enviado pro email ou colocar o email digitado mas ficará fixo
-                From : "cestsegtrabalho@gmail.com", //email que enviará a mensagem para o usuário
-                Subject : "O aluno concluiu a prova",
-                Body : ebody
+                SecureToken: "58bc9bda-20b7-472d-9522-6edc923b7f69",
+                To: 'cestsegtrabalho@gmail.com',
+                From: "cestsegtrabalho@gmail.com",
+                Subject: "O aluno concluiu a prova",
+                Body: ebody
             }).then(
+                window.open('/src/provas/bobcat.html', '_self'), setLocalStorage(),
                 enviarDados(),
-                //window.location.href = '/src/provas/bobcat.html', 
                 setLocalStorage()
             );
         });
     </script>
 </body>
 </html>
+
 <!--COMEÇO DO CSS-->
 <style type="text/css">
     input {
@@ -123,12 +107,12 @@
         width: 30%;
     }
 
-    body{
+    body {
         align-items: center;
         text-align: center;
     }
 
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: 700px) {
         input {
             width: 90%;
         }

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo e Módulos</title>
+
+</head>
+<body>
+    <div id="video-container">
+        <iframe id="video-frame" src="https://drive.google.com/file/d/1j00VptFUAebnBeDxO6lpocBd-M-4Xx7v/preview" width="640" height="280" allow="autoplay"></iframe>
+        <h3>Wi-fi-vídeo opcional<br>Módulo abaixo</h3>
+    </div>
+
+    <div id="module-content">
+        <!-- Content will appear here -->
+    </div>
+
+    <div id="buttons-container">
+        <button onclick="showModuleContent(1)">Módulo 1</button>
+        <button onclick="showModuleContent(2)">Módulo 2</button>
+        <button onclick="showModuleContent(3)">Módulo 3</button>
+        <button onclick="showModuleContent(4)">Módulo 4</button>
+    </div>
+
+
+
+    <h4>Dúvidas? Fale com o instrutor</h4>
+    <div id="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=5521973561012&text=Ol%C3%A1%20professor.%20Preciso%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20mat%C3%A9ria%20do%20curso">
+            <img src="/src/assets/img/capa de modulos/falecomoinstrutor.png" alt="Fale com o instrutor" width="300">
+        </a>
+    </div>
+
+    <script>
+        function showModuleContent(moduleNumber) {
+            const content = {
+                1: ` <b>Módulo 1</b><br>
+NR 33
+Trabalho Em Espaço Confinado
+Módulo 1
+Objetivo
+Esta Norma tem como objetivo estabelecer OS REQUISITOS MÍNIMOS PARA IDENTIFICAÇÃO de espaços confinados e o reconhecimento, avaliação, monitoramento e controle dos riscos existentes, de forma a garantir permanentemente a segurança e saúde dos trabalhadores que interagem direta ou indiretamente nestes espaços.
+
+O que é Espaço Confinado?
+Espaço Confinado é qualquer área ou ambiente não projetado para ocupação humana contínua, que possua meios limitados de entrada e saída, cuja ventilação existente é insuficiente para remover contaminantes ou onde possa existir a deficiência ou enriquecimento de oxigênio.
+
+Responsabilidades 
+Cabe ao Empregador:
+
+a) indicar formalmente o responsável técnico pelo cumprimento desta norma;
+
+b) identificar os ESPAÇOS confinados existentes no estabelecimento;
+
+c) identificar os RISCOS específicos de cada espaço confinado;
+
+d) implementar a GESTÃO EM SEGURANÇA E SAÚDE no trabalho em espaços confinados, por medidas técnicas de prevenção, administrativas, pessoais e de emergência e salvamento, de forma a garantir permanentemente ambientes com condições adequadas de trabalho;
+
+e) garantir a capacitação continuada dos trabalhadores sobre os riscos, as medidas de controle, de emergência e salvamento em espaços confinados;
+
+f) garantir que o acesso ao espaço confinado somente ocorra após a emissão, por escrito, da Permissão de Entrada e Trabalho (PET), conforme modelo constante no anexo II desta NR;
+
+g) fornecer às empresas contratadas informações sobre os riscos nas áreas onde desenvolverão suas atividades e exigir a capacitação de seus trabalhadores;
+
+h) acompanhar a implementação das medidas de segurança e saúde dos trabalhadores das empresas contratadas provendo os meios e condições para que eles possam atuar em conformidade com esta NR;
+
+i) INTERROMPER todo e qualquer tipo de trabalho em caso de suspeição de condição de RISCO GRAVE E IMINENTE, procedendo ao imediato abandono do local; e
+
+j) garantir informações atualizadas sobre os riscos e medidas de controle ANTES de cada acesso aos espaços confinados.
+
+Cabe aos Trabalhadores
+a) colaborar com a empresa no cumprimento desta NR;
+
+b) utilizar adequadamente os meios e equipamentos fornecidos pela empresa;
+
+c) comunicar ao Vigia e ao Supervisor de Entrada AS SITUAÇÕES DE RISCO para sua segurança e saúde ou de terceiros, que sejam do seu conhecimento; e
+
+d) cumprir os procedimentos e orientações recebidos nos treinamentos com relação aos espaços confinados.
+
+Em áreas classificadas os equipamentos devem estar certificados ou possuir documento contemplado no âmbito do Sistema Brasileiro de Avaliação da Conformidade – INMETRO.
+
+As avaliações atmosféricas iniciais devem ser realizadas FORA Do espaço confinado.
+
+A Permissão de Entrada e Trabalho é VÁLIDA SOMENTE PARA CADA ENTRADA.
+
+O procedimento para trabalho deve contemplar, NO MÍNIMO: objetivo, campo de aplicação, base técnica, responsabilidades, competências, preparação, emissão, uso e cancelamento da Permissão de Entrada e Trabalho, capacitação para os trabalhadores, análise de risco e medidas de controle.
+
+Os procedimentos para trabalho em espaços confinados e a Permissão de Entrada e Trabalho devem ser AVALIADOS no mínimo 1 vez ao ano e revisados sempre que houver alteração dos riscos, com a participação do Serviço Especializado em Segurança e Medicina do Trabalho – SESMT e da Comissão Interna de Prevenção de Acidentes – CIPA.
+                `,
+                2: ` <b>Módulo 2</b><br>
+                NR 33
+Trabalho Em Espaço Confinado
+Módulo 2
+Procedimentos Revistos
+Os procedimentos de entrada em espaços confinados devem ser revistos quando da ocorrência de qualquer uma das circunstâncias abaixo:
+
+a) entrada não autorizada num espaço confinado;
+b) identificação de riscos não descritos na Permissão de Entrada e Trabalho;
+c) acidente, incidente ou condição não prevista durante a entrada;
+d) qualquer mudança na atividade desenvolvida ou na configuração do espaço confinado;
+e) solicitação do SESMT ou da CIPA; e
+f) identificação de condição de trabalho mais segura.
+
+Todo trabalhador designado para trabalhos em espaços confinados deve ser submetido a exames médicos específicos para a função que irá desempenhar, conforme estabelecem as NR 07 e 31, incluindo os fatores de riscos psicossociais com a emissão do respectivo Atestado de Saúde Ocupacional – ASO.
+
+O número de trabalhadores envolvidos na execução dos trabalhos em espaços confinados deve ser determinado conforme a ANÁLISE DE RISCO.
+
+É vedada a realização de qualquer trabalho em espaços confinados DE FORMA INDIVIDUAL OU ISOLADA.
+
+Supervisor de Entrada
+O SUPERVISOR DE ENTRADA deve desempenhar as seguintes funções:
+
+a) emitir a Permissão de Entrada e Trabalho (PET) ANTES do início das atividades;
+
+b) executar os testes, conferir os equipamentos e os procedimentos contidos na Permissão de Entrada e Trabalho;
+
+c) assegurar que os serviços de emergência e salvamento estejam disponíveis e que os meios para acioná-los estejam operantes;
+
+d) cancelar os procedimentos de entrada e trabalho quando necessário; e
+
+e) encerrar a Permissão de Entrada e Trabalho (PET) APÓS o término dos serviços.
+
+O SUPERVISOR de Entrada PODE desempenhar a função de VIGIA.
+
+Vigia
+O VIGIA deve desempenhar as seguintes funções:
+
+a) manter continuamente a CONTAGEM precisa do número de trabalhadores autorizados no espaço confinado e assegurar que todos saiam ao término da atividade;
+
+b) permanecer FORA do espaço confinado, junto à entrada, em contato permanente com os trabalhadores autorizados;
+
+c) adotar os procedimentos de EMERGÊNCIA, acionando a equipe de salvamento, pública ou privada, quando necessário;
+
+d) operar os movimentadores de pessoas; e
+
+e) ordenar o ABANDONO do espaço confinado sempre que reconhecer algum sinal de alarme, perigo, sintoma, queixa, condição proibida, acidente, situação não prevista ou quando não puder desempenhar efetivamente suas tarefas, nem ser substituído por outro Vigia.
+
+O Vigia não poderá realizar outras tarefas que POSSAM COMPROMETER o dever principal que é o de monitorar e proteger os trabalhadores autorizados.
+
+Capacitação
+É vedada a designação para trabalhos em espaços confinados sem a prévia capacitação do trabalhador.
+
+O empregador deve desenvolver e implantar programas de capacitação sempre que ocorrer QUALQUER DAS SEGUINTES SITUAÇÕES:
+
+a) mudança nos procedimentos, condições ou operações de trabalho;
+
+b) algum evento que indique a necessidade de novo treinamento; e
+
+c) quando houver uma razão para acreditar que existam desvios na utilização ou nos procedimentos de entrada nos espaços confinados ou que os conhecimentos não sejam adequados.
+
+Capacitação Periódica
+Todos os trabalhadores autorizados, Vigias e Supervisores de Entrada DEVEM RECEBER capacitação periódica a cada 12 meses, com carga horária mínima de 8 horas.
+
+Capacitação Inicial
+A capacitação inicial dos trabalhadores autorizados e Vigias deve ter carga horária mínima de 16 horas, ser realizada dentro do horário de trabalho, com conteúdo programático de:
+
+a) definições;
+b) reconhecimento, avaliação e controle de riscos;
+c) funcionamento de equipamentos utilizados;
+d) procedimentos e utilização da Permissão de Entrada e Trabalho; e
+e) noções de resgate e primeiros socorros.
+
+Todos os supervisores de entrada devem receber capacitação específica, com carga horária mínima de 40 horas para a capacitação inicial.
+
+Os instrutores designados pelo responsável técnico, devem possuir comprovada proficiência no assunto.
+
+Ao término do treinamento deve-se emitir um certificado contendo o nome do trabalhador, conteúdo programático, carga horária, a especificação do tipo de trabalho e espaço confinado, data e local de realização do treinamento, com as assinaturas dos instrutores e do responsável técnico.
+                `,
+                3: ` <b>Módulo 3</b><br>
+                NR 33
+Trabalho Em Espaço Confinado
+Módulo 3
+Emergência e Salvamento
+O empregador deve elaborar e implementar procedimentos de emergência e resgate adequados aos espaços confinados incluindo, no mínimo:
+
+a) descrição dos possíveis cenários de acidentes, obtidos a partir da Análise de Riscos;
+
+b) descrição das medidas de salvamento e primeiros socorros a serem executadas em caso de emergência;
+
+c) seleção e técnicas de utilização dos equipamentos de comunicação, iluminação de emergência, busca, resgate, primeiros socorros e transporte de vítimas;
+
+d) acionamento de equipe responsável, pública ou privada, pela execução das medidas de resgate e primeiros socorros para cada serviço a ser realizado; e
+
+e) exercício simulado anual de salvamento nos possíveis cenários de acidentes em espaços confinados.
+
+É vedada a entrada e a realização de qualquer trabalho em espaços confinados SEM A EMISSÃO da Permissão de Entrada e Trabalho.
+
+Glossário
+ANÁLISE PRELIMINAR DE RISCO (APR): avaliação inicial dos riscos potenciais, suas causas, consequências e medidas de controle.
+
+ÁREA CLASSIFICADA: área potencialmente explosiva ou com risco de explosão.
+
+Atmosfera IPVS – Atmosfera Imediatamente Perigosa à Vida ou à Saúde: qualquer atmosfera que apresente risco imediato à vida ou produza imediato efeito debilitante à saúde.
+
+ENRIQUECIMENTO DE OXIGÊNIO: atmosfera contendo mais de 23% de oxigênio em volume.
+
+PERMISSÃO DE ENTRADA E TRABALHO (PET): documento escrito contendo o conjunto de medidas de controle visando à entrada e desenvolvimento de trabalho seguro, além de medidas de emergência e resgate em espaços confinados.
+
+PROFICIÊNCIA: competência, aptidão, capacitação e habilidade aliadas à experiência.
+
+PROGRAMA DE PROTEÇÃO RESPIRATÓRIA: Conjunto de medidas práticas e administrativas necessárias para proteger a saúde do trabalhador pela seleção adequada e uso correto dos respiradores.
+
+RISCO GRAVE E IMINENTE: Qualquer condição que possa causar acidente de trabalho ou doença profissional com lesão grave à integridade física do trabalhador.
+
+SUPERVISOR DE ENTRADA: pessoa capacitada para operar a permissão de entrada com responsabilidade para preencher e assinar a Permissão de Entrada e Trabalho (PET) para o desenvolvimento de entrada e trabalho seguro no interior de espaços confinados.
+
+TRABALHADOR AUTORIZADO: trabalhador capacitado para entrar no espaço confinado, ciente dos seus direitos e deveres e com conhecimento dos riscos e das medidas de controle existentes.
+
+VIGIA: trabalhador designado para permanecer FORA do espaço confinado e que é responsável pelo acompanhamento, comunicação e ordem de abandono para os trabalhadores.
+                `,
+                4: ` <b>Módulo 4</b><br>
+                NR 33
+Trabalho Em Espaço Confinado
+Módulo 4
+1. Isolamento
+
+2. Teste inicial da atmosfera: horário_____ Oxigênio Inflamáveis Gases/vapores tóxicos Poeiras/fumos/névoas tóxicas Nome legível / assinatura do Supervisor dos testes:
+
+3. Bloqueios, travamento e etiquetagem
+
+4. Purga e/ou lavagem
+
+5. Ventilação/exaustão – tipo, equipamento e tempo
+
+6. Teste após ventilação e isolamento: horário ____ Oxigênio Inflamáveis Gases/vapores tóxicos Poeiras/fumos/névoas tóxicas Nome legível / assinatura do Supervisor dos testes:
+
+7. Iluminação geral
+
+8. Procedimentos de comunicação:
+
+9. Procedimentos de resgate:
+
+10. Procedimentos e proteção de movimentação vertical:
+
+11. Treinamento de todos os trabalhadores? É atual?
+
+12. Equipamentos:
+
+13. Equipamento de monitoramento contínuo de gases aprovados e certificados por um Organismo de Certificação Credenciado (OCC) pelo INMETRO para trabalho em áreas potencialmente explosivas de leitura direta com alarmes em condições: Lanternas Roupa de proteção Extintores de incêndio Capacetes, botas, luvas Equipamentos de proteção respiratória/autônomo ou sistema de ar mandado com cilindro de escape Cinturão de segurança e linhas de vida para os trabalhadores autorizado Cinturão de segurança e linhas de vida para a equipe de resgate Escada Equipamentos de movimentação vertical/suportes externos Equipamentos de comunicação eletrônica aprovados e certificados por um Organismo de Certificação Credenciado (OCC) pelo INMETRO para trabalho em áreas potencialmente explosivas_ Equipamento de proteção respiratória autônomo ou sistema de ar mandado com cilindro de escape para a equipe de resgate _ Equipamentos elétricos e eletrônicos aprovados e certificados por um Organismo de Certificação Credenciado (OCC) pelo INMETRO para trabalho em áreas potencialmente explosivas Legenda: N/A – “não se aplica”; N – “não”; S – “sim”. Procedimentos que devem ser completados durante o desenvolvimento dos trabalhos Permissão de trabalhos a quente Procedimentos de Emergência e
+
+Resgate Telefones e contatos: Ambulância:_______
+Bombeiros:________
+Segurança:_________
+                `,
+            };
+
+            const videoContainer = document.getElementById('video-container');
+            const moduleContent = document.getElementById('module-content');
+
+            videoContainer.style.display = 'none'; // Esconde o vídeo
+            moduleContent.innerHTML = content[moduleNumber] || 'Módulo não encontrado.';
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        #video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        #buttons-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #000000;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #module-content {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        h3, h4 {
+            text-align: center;
+        }
+        #whatsapp-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</body>
+</html>

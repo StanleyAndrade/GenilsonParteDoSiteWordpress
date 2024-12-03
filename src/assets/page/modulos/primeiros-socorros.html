@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo e Módulos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        #video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        #buttons-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #000000;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #module-content {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        h3, h4 {
+            text-align: center;
+        }
+        #whatsapp-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <iframe id="video-frame" src="https://drive.google.com/file/d/1WhP_HadoZ86Ol3qjyUEVU4QThkTcTQEH/preview" width="640" height="280" allow="autoplay"></iframe>
+        <h3>Wi-fi-vídeo opcional<br>Módulo abaixo</h3>
+    </div>
+
+    <div id="module-content">
+        <!-- Content will appear here -->
+    </div>
+
+    <div id="buttons-container">
+        <button onclick="showModuleContent(1)">Módulo 1</button>
+        <button onclick="showModuleContent(2)">Módulo 2</button>
+        <button onclick="showModuleContent(3)">Módulo 3</button>
+        <button onclick="showModuleContent(4)">Módulo 4</button>
+    </div>
+
+
+
+    <h4>Dúvidas? Fale com o instrutor</h4>
+    <div id="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=5521973561012&text=Ol%C3%A1%20professor.%20Preciso%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20mat%C3%A9ria%20do%20curso">
+            <img src="/src/assets/img/capa de modulos/falecomoinstrutor.png" alt="Fale com o instrutor" width="300">
+        </a>
+    </div>
+
+    <script>
+        function showModuleContent(moduleNumber) {
+            const content = {
+                1: `
+<b>Primeiros Socorros
+Módulo 1</b>
+Primeiros Socorros Avançados
+
+(CADERNO DO ALUNO – CONTEÚDO PROGRAMáTICO)
+
+Os acidentes representam um dos mais sérios problemas de saúde pública, constituindo-se na principal causa de mortes e invalidez entre jovens e crianças. Os acidentes destroem a saúde, a vida e a família de milhões de pessoas.
+
+Qualidades de um bom Socorrista:
+
+Capacidade de improvisação.
+Compromisso com a Vida.
+Bom senso.p
+Reconhecer seus limites.
+Saber o que fazer, e o que não fazer.
+Paciência e calma.
+Determinação.
+Seria muito bom ter todas essas qualidades ao mesmo tempo, sei que é difícil, mas para começar é indispensável o compromisso com a VIDA, o restante pode ser adquirido e aprimorado com o tempo.
+
+Suporte Básico de Vida (RCP e DEA).
+Ressuscitação Cardiopulmonar (RCP) – Quando há uma parada cardíaca, poucos minutos após, o paciente poderá morrer, a menos que a circulação (fluxo sanguíneo) retorne ou é restaurada. Proporcionar a ressuscitação cardiopulmonar (RCP) é uma maneira de manter a circulação até que a ajuda especializada chegue.
+Comprimindo o peito do paciente e permitindo que o tórax ajude a manter uma quantidade de sangue através do coração,  pulmões, e nas artérias principais do corpo (incluindo o cérebro). Essas compressões no peito possivelmente combinado com a respiração “boca a boca” é a denominada Ressuscitação Cardiopulmonar Básica (RCP). Os desfibriladores automáticos externos (DEAs) tornaram-se parte dos esforços da RCP.
+
+Realização da RCP (Ressuscitação Cardiopulmonar)
+
+ 
+
+Pedir ajuda. Ativar o sistema de Emergência discando 192, e que alguém traga o DEA se estiver disponível.
+
+Após a confirmação de que o paciente não responde e está inconsciente, verifique se o paciente está respirando, se não estiver, abra as vias aéreas delicadamente levantando o queixo para cima e inicie imediatamente a RCP pela administração de duas respirações e início de compressões torácicas.
+
+Coloque a palma de uma mão no meio do esterno e a outra mão em cima, pressione com força para baixo, comprimindo o tórax cerca de 4 a 5 cm, a cerca de 100 vezes por minuto.
+
+Realizar ciclos de compressão torácica-ventilação 30:2, ou seja, 30 compressões alternadas com 2 ventilações. Essa orientação aplica-se desde socorristas leigos até profissionais de saúde treinada e objetiva uniformizar o atendimento para todos os socorristas.
+
+Se você tem acesso imediato a um Desfibrilador Automático Externo (DEA), aplique os adesivos do DEA no peito do paciente, seguindo o desenho na caixa. Ligue o interruptor, o DEA vai analisar o ritmo cardíaco do paciente, ouça e siga as instruções do DEA. Se o DEA administra um choque, mas o paciente não recupera a consciência, retornar imediatamente as compressões torácicas por 2 minutos e após, aplicação do DEA novamente, e deste modo repetir o ciclo até que cheque a ajuda dos profissionais treinados.
+
+A RCP melhoram as chances de sobrevivência de uma parada cardiopulmonar fora do hospital.
+
+Desfibrilador Externo Automático (DEA) – Diagnóstica o ritmo elétrico do coração e sugere a aplicação do choque, guia a sequência, procedimentos do suporte básico da vida e desfibrilação e usa comandos verbais e de sinais luminoso-sonoros.
+Para que serve: Emite choques elétricos que recompõem os batimentos cardíacos em situações de arritmia.
+
+Como funciona: Aplicado no paciente faz um eletrocardiograma instantâneo e, em caso de diagnóstico de arritmia, aplica os choques. São aparelhos capazes de identificar, através de pás adesivas colocadas no tórax, alterações do ritmo do coração (que quase na totalidade das vezes, acima de 95%, são responsáveis pelas paradas cardíacas em adultos), e de liberar uma corrente elétrica capaz de reverter esse ritmo fatal. Quem pode operar: Qualquer pessoa, desde que siga corretamente as instruções.
+
+Onde encontrar: Órgãos públicos como prefeituras, academias de ginástica (é comum alguém ter problema de coração ao fazer exercícios físicos), hotéis, shopping centers e locais de grande movimentação.
+
+Como Usar:
+
+Ao deparar com uma pessoa caída no chão, veja as condições de segurança do local em volta. Por exemplo, se é uma rua movimentada de veículos ou se há muitas pessoas nas proximidades.
+
+É preciso verificar se a pessoa está consciente. Bata levemente nos ombros e grite próximo ao ouvido “você está bem?” por cerca de três vezes, aumentando gradativamente o tom da voz. Se ela não reagir, chame a ambulância pelo número 192 e peça para alguém buscar o AED, caso haja algum por perto.
+
+Se a vítima não estiver respirando, é preciso fazer respiração artificial e massagem até que o aparelho chegue.
+
+O desfibrilador vem dentro de um estojo com o aparelho principal e dois conjuntos de dois eletrodos em forma de apliques, um para crianças até 25 quilos e outro para pessoas acima desse peso. Os apliques infantis são menores e soltam uma carga inferior.
+
+Ligue o cabo dos diodos no aparelho, no canto superior esquerdo. Toda a sequência para fazer o DEA funcionar pode ser conferido no manual que vem no estojo.
+
+Os diodos devem ser aplicados diretamente na pele. Se a pessoa estiver molhada, é aconselhável secá-la antes. A vítima também não pode estar usando acessórios de metal, como relógios ou correntes.
+
+Um dos apliques adesivos deve ser colocado um pouco abaixo do ombro direito. O outro deve estar posicionado abaixo do peito esquerdo, deixando o coração entre eles. Há ilustrações nos apliques mostrando o posicionamento correto.
+
+Ligue o aparelho. O próprio AED, através dos diodos, faz uma avaliação da necessidade ou não do choque. Se for preciso, apertar o botão, ocorre a descarga elétrica. Preste atenção para que ninguém esteja tocando a vítima nessa hora.
+
+Novos processos alternados de respiração e massagem cardíaca podem ser feitos até a chegada da ambulância.
+
+O DEA não toma decisão! Quem toma a decisão é o socorrista!
+
+Atendendo a uma Emergência
+Manter a vítima deitada, só removê-la do local em alguns casos;
+Verificar os sinais vitais do acidentado: pulso, respiração e pupilas;
+Dar prioridade ao atendimento da parada cardiorrespiratória;
+Manter vias aéreas superiores livres;
+Investigar a existência de hemorragias, queimaduras, ferimentos, fraturas, envenenamentos;
+Observar o nível de consciência;
+Em caso de amputação, recolher a parte seccionada, envolvendo-a em pano limpo;
+Afrouxar roupas e cintos;
+Agir com calma e segurança;
+Afastar os curiosos;
+Não medicar a vítima sem prescrição médica
+Mantenha a calma.
+Tenha em mente a seguinte ordem de segurança quando você estiver prestando socorro:
+
+PRIMEIRO EU (o socorrista)
+
+DEPOIS MINHA EQUIPE (Incluindo os transeuntes)
+
+E POR ÚLTIMO A VÍTIMA
+
+Isto parece ser contraditório a primeira vista, mas tem o intuito básico de não gerar novas vítimas.
+
+Ao prestar socorro, é fundamental ligar para o atendimento pré-hospitalar de imediato ao chegar ao local do acidente. Sempre verifique se há riscos no local, para você e sua equipe, antes de agir no acidente.
+
+Mantenha sempre o bom senso.
+
+Mantenha o espírito de liderança, pedindo ajuda e afastando os curiosos.
+
+Distribua tarefas, assim os transeuntes que poderiam atrapalhar lhe ajudarão e se sentirão mais úteis.
+
+Evite manobras intempestivas (realizadas de forma imprudente, com pressa).
+                `,
+                2: `
+                <b>Primeiros Socorros
+Módulo 2</b>
+Em caso de múltiplas vítimas dê preferência àquelas que correm maior risco de morte como, por exemplo, vítimas em parada cardiorrespiratória ou que estejam sangrando muito.
+
+Seja socorrista e não herói.
+
+Avaliação da Vítima
+Verifique se a vítima está consciente.
+Diga “Você está me ouvindo?” ou “Abra os olhos!” Sacuda levemente seus ombros. Se ela estiver inconsciente, não haverá resposta.
+
+Se estiver inconsciente, desobstrua a passagem de ar.
+Remova qualquer obstrução visível da boca da vítima. Coloque dois dedos debaixo da ponta do queixo e erga o maxilar. Ao mesmo tempo, coloque sua outra mão na testa da vítima e incline a cabeça para trás.
+
+Verifique a respiração.
+Colocando a cabeça perto da boca e nariz da vítima: – Olhe para o peito para ver se há movimento. – Procure ouvir o som da respiração. – Tente sentir a respiração da vítima na sua face. Observe por 5 segundos antes de certificar-se de que não há respiração.
+
+Verifique o pulso.
+Mantendo a cabeça da vítima inclinada para trás, procure com dois dedos o pomo-de-adão. Deslize os dedos para trás até encontrar a depressão entre a traqueia e o músculo ao lado. Mantendo os dedos nesta posição, procure detectar a pulsação da artéria carótida.
+
+Posição de Recuperação
+A posição de recuperação:
+
+Permite que a vítima respire livremente;
+Protege as vias aéreas da vítima. Permite que os fluídos como vômito e sangue drenem de maneira que a vítima não se engasgue ou se afogue com eles;
+Promove uma boa circulação;
+Apoia, dá suporte ao corpo;
+Coloca a vítima em uma posição confortável.
+Para colocar a pessoa na posição de recuperação:
+
+Ajoelhe-se ao seu lado, incline a cabeça da vítima para trás e levante o queixo para desobstruir as vias respiratórias. Depois de certificar-se de que as pernas estão esticadas, dobre o braço que estiver mais próximo de você, formando um ângulo reto em relação ao corpo. A palma da mão deve estar voltada para cima.
+Dobre o outro braço da vítima sobre o peito e coloque a mão contra o rosto, com a palma virada para fora. Com a sua outra mão, pegue a coxa que esta mais afastada de você e dobre o joelho da vítima. Mantenha o pé apoiado no chão.
+ Mantendo a mão da vítima contra o rosto, use a outra a mão para pegar a perna e puxá-la delicadamente em sua direção.
+Incline a cabeça da vítima para trás para manter a passagem de ar livre. Acomode a mão para que a cabeça fique bem apoiada. Ajuste a posição da perna que está em cima, de modo que o quadril e o joelho formem um ângulo reto. Verifique a respiração e o pulso regularmente.
+Engasgamento (Vítima Consciente)
+Se a pessoa está consciente, não consegue falar, tem dificuldades respiratórias, mas consegue tossir, observa se que a obstrução é parcial. Neste caso o procedimento adequado é:
+
+Colocar a vítima de pé;
+Estimular a vitima a tossir e observando atentamente as suas tentativas de expelir o corpo estranho.
+Se apesar deste procedimento a vítima continuar engasgada realize a Manobra de Heimlich.
+
+Fique de pé ao lado e ligeiramente atrás da vítima;
+Coloque a sua mão fechada com o polegar para dentro, contra o abdômen da vítima, ligeiramente acima do umbigo e abaixo do limite das costelas. Agarre firmemente o pulso com a outra mão e exerça um rápido puxão para cima;
+Faça entre 6 a 10 compressões rápidas.
+Se não obtiver sucesso repita a sequência.
+No caso de indivíduos obesos e gestantes as compressões devem ser realizadas no osso esterno.
+Se a vítima for uma criança pequena ou mesmo um bebê os procedimentos adotados serão diferentes:
+
+Coloque a criança deitada de bruços (decúbito ventral) apoiada no seu antebraço, com a cabeça mais baixa que o tronco.
+Efetue 4 a 10 talonagens na parte superior e ao centro das costas (entre as escápulas);
+Caso não tenha ocorrido à desobstrução, vire a criança de costas (decúbito dorsal), apóie 2 ou 3 dedos em seu abdômen;
+Realize entre 4 a 10 compressões;
+Se necessário, repetir o procedimento.
+Ataque Cardíaco e Dor Torácica
+Um ataque cardíaco ocorre quando o fornecimento de sangue a uma parte do músculo cardíaco é reduzido drasticamente ou cessa, devido a uma obstrução em uma das artérias coronarianas, que fornecem sangue ao coração. Depósito de gordura ao longo da parede interna da artéria coronariana é uma das razões da obstrução. O suprimento de sangue também poderá ser reduzido se a artéria entrar com espasmos.
+
+Sinais e Sintomas
+
+Ataques cardíacos são difíceis de determinar. Se você suspeitar por qualquer motivo que está diante de alguém que esteja sofrendo um ataque cardíaco, procure ajuda médica imediatamente ao invés de esperar.
+
+Pressão desconfortável, sensação de estar cheio, aperto, ou dor no centro do peito com duração de 2 minutos ou mais, podendo iniciar e parar;
+A dor pode espalhar-se para um dos ombros, pescoço, mandíbula inferior ou braços;
+Fraqueza, Tontura, Suor, Náusea, Respiração Curta.
+Prevenção contra Transmissão de Doenças
+Infecções transmitidas pelo sangue
+
+As doenças transmissíveis pelo sangue são caracterizadas pela presença de micro-organismos que podem estar presentes em seres humanos. Dessas doenças, duas são significativamente preocupantes: Hepatite B (HBV) e a AIDS (HIV).
+
+Procedimento:
+
+Mantenha os cortes abertos cobertos com bandagem, tecidos ou plásticos evitando contato com o sangue da vítima;
+Use luvas de látex para evitar contato direto com o sangue ou fluídos corporais da vítima;
+Se não houver disponibilidade de conseguir luvas de látex, pode-se utilizar sacos plásticos;
+Aplique a respiração boca a boca, utilizando alguma proteção para evitar o contato direto com a boca da vítima. Não existe qualquer evidência de que a AIDS seja transmissível pela saliva.
+Em contato com o sangue:
+
+Caso o socorrista tenha sido exposto ao sangue e fluídos deve:
+
+Lavar imediatamente o local com água corrente e sabão, enxaguando vigorosamente a região;
+Comunicar o incidente imediatamente à autoridade sanitária de sua região;
+Procurar atendimento médico especializado.
+Sangramentos e Ferimentos
+A maioria das hemorragias envolvem mais do que um tipo de vaso sanguíneo. O sangue que sai das artérias é vermelho vivo e esguicha por isso as hemorragias arteriais são as mais perigosas e difíceis de controlar. O sangue que sai das veias flui uniformemente possui coloração escura. Quando sai dos capilares o sangue flui bem devagar. Dessa forma, cada tipo de vaso sanguíneo contém sangue com diferentes tonalidades de vermelho. As hemorragias estão basicamente divididas em internas e externas.
+
+Hemorragias Externas
+
+Sangramento de estruturas superficiais com exteriorização do sangramento. Podem ser controlados utilizando técnicas básicas de primeiros socorros.
+
+Hemorragias Internas
+
+Sangramento de estruturas profundas, pode ser oculto ou se exteriorizar (por exemplo, hemorragia do estômago). As medidas básicas de socorro não funcionam. A vítima deve ser tratada no hospital.
+
+Sinais e Sintomas
+
+Sangue pela boca (junto com o vômito ou saliva), nas fezes e na urina;
+Sangue pela vagina ou ânus;
+Pulso rápido;
+Frio e pele úmida;
+Pupilas dilatadas;
+Vômito e náuseas;
+Ferimentos
+
+Em ferimentos superficiais (escoriações), lavar com água e sabão ou água corrente.
+Em ferimentos mais profundos, estancar através de compressão local a hemorragia evitando o choque.
+Cobrir o ferimento com gaze limpa ou pano com certeza que esteja limpo
+Estado de Choque
+O choque ocorre quando o sistema circulatório falha em mandar sangue para as diversas partes do corpo.
+
+Tipos de Choques:
+
+Hipovolêmico, cardiogênico, neurogênico, anafilático e séptico.
+
+Hipovolêmico
+
+O choque hipovolêmico resulta da perda de líquidos e fluídos corporais, quando relacionado com perda de sangue, é conhecido como Choque Hemorrágico.
+
+Sinais e Sintomas
+
+Respiração e pulso rápido;
+Palidez ou pele azulada;
+Lentidão no repreenchimento capilar;
+Pele úmida e fria;
+Transpiração forte;
+Pupilas dilatadas;
+Olhos escuros e fundos;
+Ânsia, vômito e náusea;
+Perda da consciência em choque profundo.
+Primeiros Socorros       
+
+Mesmo que os sinais do estado de choque ainda não tenham aparecido numa vítima, trate-a apropriadamente.
+Socorristas podem prevenir o estado de choque, mas não podem revertê-lo.
+                `,
+                3: `
+                Primeiros Socorros
+Módulo 3
+Anafilático
+
+Este processo ocorre em questão de minutos ou em segundos, causando inclusive a morte de vítima, caso ela não seja assistida imediatamente.
+
+Uma das causas mais comuns de morte por cheque anafilático, e que representa 24% do total, é a insuficiência de circulação de sangue no corpo devido à obstrução dos vasos sanguíneos.
+
+Sinais  e Sintomas
+
+Tosse e espirros;
+Dificuldade para respirar;
+Aperto e inchaço na garganta;
+Aperto no peito;
+Coceira, queimação, empolação, erupção severa ou vermelhidão;
+Face, pálpebras, língua e boca inchadas;
+Tontura, náusea e vômito;
+Cãibras abdominais.
+Desmaio
+
+Embora não seja considerado um choque, o desmaio caracteriza-se por uma perda repentina de consciência. Ocorre quando o fluxo sanguíneo para o cérebro é interrompido. Muitas são as causas que geram esta interrupção.
+
+Sinais e Sintomas
+
+O desmaio pode ocorrer repentinamente ou precedido de sinais de aviso, que pode ser um ou todos os seguintes:
+
+Tontura;
+Ver pontos escuros;
+Náuseas;
+Palidez;
+ 
+Queimaduras
+Queimadura é a lesão causada por ação de calor ou de outras radiações sobre o organismo. As queimaduras, além de provocarem intensa dor local, podem causar choque e levar a vítima à morte, dependendo do estado e da extensão da área atingida.
+
+Os seguintes agentes podem causar queimaduras:
+
+Líquidos ferventes, contato direto com chama, sólidos superaquecidos ou incandescentes, vapores quentes, substâncias químicas, radiações infravermelhas e ultravioletas naturais, emanações radiativas e eletricidade.
+
+Classificação:
+
+As queimaduras externas podem ser superficiais, quando atingem apenas camadas da superfície da pele, ou profundas, quando há destruição da pele na área atingida.
+
+A classificação das queimaduras em graus é uma classificação prática, que indica apenas a profundidade da lesão.
+
+Queimaduras de todos os graus podem apresentar-se no mesmo paciente.
+
+1º Grau:
+
+Caracteriza a lesão superficial da pele, sem formação de bolhas. Forma-se somente eritema, isto é, vermelhidão. A dor é suportável. E o caso das queimaduras causadas pelos raios solares e por radioatividade.
+
+2º Grau:
+
+Atinge a epiderme e a derme, caracteriza-se por muita dor, com formação de flictenas (bolhas). Por vezes extensas, por desprendimento das camadas superficiais.
+
+3 º Grau:
+
+Atinge todas as camadas (tecidos) de revestimento do corpo, incluindo o tecido gorduroso, os músculos, vasos e nervos, podendo chegar até os ossos. É a mais grave quanto à profundidade da lesão. Caracteriza-se por pouca dor, devido à destruição das terminações nervosas da sensibilidade, pele seca, dura e escurecida ou esbranquiçada.
+
+Lesões Graves
+Fratura
+
+Rompimento total ou parcial de qualquer osso.
+
+Sinais e Sintomas:
+
+Dor;
+Deformidade do local;
+Movimento anormal ou falta de movimento;
+Impotência funcional em algum membro ou extremidade.
+Tipos:
+
+Fechada: Há fratura com integridade da pele;
+
+Aberta: Há lesão exposta.
+
+Procedimentos:
+
+Informe o que planeja fazer;
+Exponha o local;
+Imobilizar a região da fratura;
+Estancar hemorragia, quando houver;
+Procurar um serviço médico.
+Fratura da Coluna Vertebral
+
+Sintomas:
+
+Dor local após forte traumatismo;
+Dormência dos membros;
+ 
+Procedimentos:
+
+Manter a vítima em repouso absoluto;
+Evite o estado de choque;
+Utilize uma superfície dura para o transporte do acidentado;
+Movimentar o acidentado deslocando todo corpo ao mesmo tempo.
+Lesões em Ossos, Articulações e Músculos
+Manter a vítima agasalhada e imóvel;
+Não mexer nem deixar ninguém tocar na vítima até a chegada de socorro;
+Não virar a vítima;
+Observar a respiração e estar pronto para iniciar a respiração boca a boca.
+Na Falta de Socorro:
+
+Transportar o paciente em maca ou padiola;
+Evitar abalos no transporte, para não agravar as lesões;
+Imobilizar com coleiras as lesões no pescoço;
+Deite a vitima em decúbito dorsal (barriga para cima) colocando por baixo do pescoço e cintura, um travesseiro ou toalha dobrada, de forma que se eleve.
+Males Súbitos
+Derrame (Ave)
+
+Derrame também é conhecido como Acidente Vascular Encefálico (AVE). Um derrame ocorre quando um vaso sanguíneo cerebral rompe, privando parte do cérebro de receber o fluxo sanguíneo necessário.
+
+Derrames constituem a terceira maior causa de mortes nos EUA, é também uma das causas principais de incapacitação física.
+
+Sinais e Sintomas:
+
+Os sinais e sintomas de um derrame dependem da área do cérebro atingida:
+
+Fraqueza ou torpor súbitos na face, braço e perna de um lado do corpo e perda da consciência;
+Perda, dificuldade para falar ou para entender palavras;
+Diminuição ou perda da visão, particularmente em um só olho; pupilas desiguais;
+Tontura, falta de firmeza ou quedas súbitas;
+Dor de cabeça repentina muito forte.
+Envenenamentos e Intoxicações
+Vias de Penetração: Oral, Respiratória, Pele.
+
+Cuidados Gerais:
+
+Conhecer todas as substâncias químicas utilizadas;
+Conhecer os antídotos e mantê-los na caixa de primeiros socorros.
+Intoxicação Oral:
+
+Procedimentos:
+
+Retirar o intoxicado do local;
+Manter as vias aéreas superiores desobstruídas;
+Cuidados com a parada cardiorrespiratória;
+Administrar o antídoto se disponível.
+Intoxicação Respiratória:
+
+Procedimentos:
+
+Retirar o intoxicado do local;
+Controlar a respiração;
+Cuidados com a parada cardiorrespiratória;
+Dar o antídoto se disponível.
+Intoxicação Cutânea:
+
+Procedimentos:
+
+Retirar o intoxicado do local;
+Retirar a roupa do acidentado;
+Lavar com água o local do contato;
+Administrar o antídoto se indicado.
+Acidentes com Animais Peçonhentos
+
+Os acidentes mais comuns são causados por picadas de cobras, aranhas ou escorpiões.
+
+A identificação do animal que causou o acidente é importante, pois o tratamento vai variar conforme o tipo de veneno. Mas não se deve correr risco para a captura do animal e também não deixar que essa tarefa atrase o socorro à vítima.
+
+As reações aos venenos são variáveis, pois vão depender do tipo de veneno e da própria vítima, mas em geral os sintomas são: dor local, edema, vermelhidão, às vezes bolhas, abscessos ou necrose do local, e ainda nos casos mais graves, dificuldade respiratória, convulsões, diminuição da pressão arterial e dos batimentos cardíacos.
+
+Cuidados:
+
+Manter a vítima deitada, acalmando-a e não deixando que se movimente;
+Retire anéis, pulseiras, relógios e adereços que estejam nos locais da picada, devido ao risco de garroteamento após a instalação do edema;
+Lavar o local com bastante água;
+Sempre que possível manter o local da picada abaixo do nível do coração;
+                `,
+                4: `
+                Primeiros Socorros
+Módulo 4
+Não de bebidas alcoólicas a vitima;
+Não faça torniquete e nem incisão do local da picada;
+Não tente aspirar o veneno pela boca;
+Remova a vítima para o hospital mais rapidamente possível.
+Emergências Relacionadas a Frio e Calor
+Grande parte de nosso organismo é composta por água, que se encontra em diversos fluidos corporais. Todos estes fluidos estão em balanço. A perda de fluido de qualquer fonte é refletida nos níveis de todos os outros fluidos corporais. Por exemplo, sudorese profusa vai resultar em uma diminuição do volume de sangue. Se uma vítima perde muito fluido, por qualquer meio – por hemorragia, suando, vomitando ou por diarreia – o resultado final é o mesmo: desidratação e, potencialmente, choque hipovolêmico.
+
+Se uma pessoa está perdendo fluidos (por diarreia ou vomitando), então você está com uma verdadeira emergência nas mãos. Trate a causa da perda de fluidos da melhor maneira possível e hidrate a vítima. Evacue-a o mais rápido possível.
+
+Prevenir a desidratação é muito mais fácil do que tratá-la. Portanto, é importante que todos os membros de seu grupo bebam água regularmente, na quantidade adequada, para repor a perda de fluidos.  O corpo absorve líquidos melhor  quando bebemos pequenas quantidades e com frequência, do que quando bebemos grandes quantidades de uma só vez. Comer enquanto bebemos também ajuda na absorção. Se não tivermos comida, colocar uma pitada de sal e de açúcar também ajuda.
+
+Não espere ficar com sede para beber água. Ficamos com sede quando já estamos com uma grande perda de fluidos corporais. O melhor indicador do nível de fluidos é a cor e quantidade de urina. Quanto mais urina e quanto mais clara for sua coloração, melhor. Isto indica que o corpo está com o nível de fluidos elevado. Porém, urina escura indica que o corpo está com baixa quantidade de água, e está tentando conservar o pouco que tem. Isto faz com que a urina fique mais concentrada, portanto, mais escura.
+
+A Hipotermia é uma condição médica na qual a temperatura corporal da vítima abaixou significativamente abaixo do normal e seu metabolismo começou a ser prejudicado. Isso ocorre quando a temperatura corporal fica abaixo do 35 graus Celsius. Se a temperatura corporal ficar abaixo de 32 graus Celsius a condição pode ficar crítica e até fatal. Temperaturas abaixo de 27 graus são quase sempre fatais, embora pessoas tenham sobrevivido com temperatura de 14 graus.
+
+Por razões desconhecidas, em casos raros, pessoas que ficam criticamente inconscientes e aparentemente mortas em águas muito frias são ressuscitadas, ainda que fosse esperada a morte por afogamento ou hipotermia.
+
+Tipos de hipotermia
+
+Há três tipos de hipotermia: Aguda, Subaguda e Crônica.
+
+Hipotermia aguda é a mais perigosa; a temperatura corporal cai muito rapidamente, geralmente em segundos ou minutos, como quando a vítima cai em um lago coberto por gelo.
+Hipotermia subaguda ocorre em escala de horas, mais comumente por permanecer em ambiente frio por muito tempo.
+Hipotermia crônica é tipicamente causada por alguma enfermidade. 
+Tratamento da hipotermia
+
+O tratamento da hipotermia envolve aumentar a temperatura corporal da vítima. Porém, os primeiros socorros a alguém com hipotermia devem ser feitos com cuidado.
+
+Não massageie ou esfregue a vítima.
+Não dê álcool.
+Não trate qualquer ulceração causada pelo frio.
+Não deixe que o corpo fique na vertical.
+Qualquer uma dessas ações irá desviar o sangue dos órgãos internos críticos e agravarão a situação.
+
+O que você deve fazer:
+
+Chame os serviços de emergência.
+Leve a vítima a um abrigo.
+Se possível, coloque a pessoa de roupas numa banheira com temperatura média.
+Coloque garrafas de água quente enroladas em meias de algodão nas axilas e as pernas da vítima.
+Dê comida e bebida quente.
+Monitore a vítima e esteja preparado para a ressuscitação cardio-pulmonária.
+Remova a roupa molhada somente se tiver outra para colocar no seu lugar.
+Se a hipotermia ficou severa, notavelmente se a pessoas está incoerente ou inconsciente, reaquecimento deve ser feito sob circunstâncias estritamente controladas em um hospital. Leigos devem apenas remover a vítima do ambiente gelado, dar bebida quente (não muito quente porque poderia ocasionar choque de temperatura) e levar a pessoa para o cuidado médico o mais rápido possível. Na hipotermia o reaquecimento rápido pode causar arritmia cardíaca.
+
+Transporte e Remoção de Vítimas
+Como regra básica, não se deve mover uma vítima do local do acidente até que todo o processo de remoção tenha sido devidamente organizado. No entanto a remoção deverá ser feita se:
+
+Houver perigo de incêndio;
+Houver materiais perigosos ou explosivos;
+O local do acidente oferecer perigo à vítima ou ao socorrista;
+A ambulância não puder chegar ao local.
+Uma vítima de ataque cardíaco provavelmente não necessitará ser removida, a menos que seja para posicioná-la no chão ou assoalho, visto que, a RCP deve ser realizada sobre uma superfície sólida.
+
+Quando for necessário remover uma vítima, a velocidade de remoção dependerá do motivo, tal como:
+
+Remoção de emergência. Se houver fogo, afaste a vítima da área o mais rápido possível;
+Remoção sem emergência. Se a vítima precisar ser removida para ter acesso a um veículo.
+Considere criteriosamente as lesões antes e durante a movimentação.
+A remoção ou movimentação de um acidentado deve ser feita com um máximo de cuidado, a fim de não agravar as lesões existentes. Antes da remoção da vítima, devem-se tomar as seguintes providências:
+
+Se houver suspeita de fraturas no pescoço e nas costas, evite mover a pessoa.
+Para puxá-la para um local seguro, mova-a de costas, no sentido do comprimento com o auxílio de um casaco ou cobertor.
+Para erguê-la, você e mais duas pessoas devem apoiar todo o corpo e colocá-la numa tábua ou maca, lembrando que a maca é o melhor jeito de se transportar uma vítima. Se precisar improvisar uma maca, use pedaços de madeira, amarrando cobertores ou paletós.
+Apoie sempre a cabeça, impedindo-a de cair para trás.
+Na presença de hemorragia abundante, a movimentação da vítima podem levar rapidamente ao estado de choque.
+Se houver parada respiratória, inicie imediatamente a respiração boca-a-boca e faça massagem cardíaca.
+Imobilize todos os pontos suspeitos de fratura.
+Se houver suspeita de fraturas, amarre os pés do acidentado e o erga em posição horizontal, como um só bloco, levando até a sua maca.
+No caso de uma pessoa inconsciente, mas sem evidência de fraturas, duas pessoas bastam para o levantamento e o transporte.
+Lembre-se sempre de não fazer movimentos bruscos.
+Atenção: – Movimente o acidentado o menos possível.
+
+Evite arrancadas bruscas ou paradas súbitas durante o transporte.
+O transporte deve ser feito sempre em baixa velocidade, por ser mais seguro e mais cômodo para a vítima.
+Não interrompa, sob nenhum pretexto, a respiração artificial ou a massagem cardíaca, se estas forem necessárias. Nem mesmo durante o transporte.
+                `
+            };
+
+            const videoContainer = document.getElementById('video-container');
+            const moduleContent = document.getElementById('module-content');
+
+            videoContainer.style.display = 'none'; // Esconde o vídeo
+            moduleContent.innerHTML = content[moduleNumber] || 'Módulo não encontrado.';
+        }
+    </script>
+</body>
+</html>

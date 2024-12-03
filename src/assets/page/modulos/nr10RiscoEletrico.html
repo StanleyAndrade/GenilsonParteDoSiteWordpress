@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo e Módulos</title>
+
+</head>
+<body>
+    <div id="video-container">
+        <iframe id="video-frame" src="https://drive.google.com/file/d/1DQFK99ClzuXjQGuhbzRr50IAbszcPMQD/preview" width="640" height="280" allow="autoplay"></iframe>
+        <h3>Wi-fi-vídeo opcional<br>Módulo abaixo</h3>
+    </div>
+
+    <div id="module-content">
+        <!-- Content will appear here -->
+    </div>
+
+    <div id="buttons-container">
+        <button onclick="showModuleContent(1)">Módulo 1</button>
+        <button onclick="showModuleContent(2)">Módulo 2</button>
+        <button onclick="showModuleContent(3)">Módulo 3</button>
+        <button onclick="showModuleContent(4)">Módulo 4</button>
+    </div>
+
+
+
+    <h4>Dúvidas? Fale com o instrutor</h4>
+    <div id="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=5521973561012&text=Ol%C3%A1%20professor.%20Preciso%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20mat%C3%A9ria%20do%20curso">
+            <img src="/src/assets/img/capa de modulos/falecomoinstrutor.png" alt="Fale com o instrutor" width="300">
+        </a>
+    </div>
+
+    <script>
+        function showModuleContent(moduleNumber) {
+            const content = {
+                1: ` <b>Módulo 1</b><br>
+NR 10 - RISCOS ELÉTRICOS
+Módulo 1
+NR 10 – RISCOS ELÉTRICOS (CEST  Segtrabalho)
+
+RISCOS ELÉTRICOS
+
+ Introdução
+Tal  como  acontece  com  outras  formas  de  energia,  a  eletricidade  apresenta  riscos  e pode  causar  acidentes  cujas  consequências  podem  resultar  em  danos  pessoais, materiais ou ambos. Os   danos materiais são   normalmente   resultantes   de   incêndios   e/ou explosões provocados por deficiências na instalação. Os  danos pessoais são  resultantes  da  passagem  de  corrente  elétrica  pelo  corpo humano. 2) Conceção da instalação Para  prevenir  acidentes  derivados  do  uso  da  eletricidade  é  fundamental  que  a instalação elétrica, aquando da conceção da instalação cumpra todos os requisitos de segurança. Uma instalação elétrica é o conjunto de: a)componentes  que  permitem  ou  podem  permitir  a  passagem  da  corrente  (fios condutores, proteções); b) Componentes  que  não  permitindo  a  passagem  de  corrente  são  essenciais  ao seu funcionamento, tais como tubos, caixas, suportes, isoladores, etc. De  um  modo  geral,  as  instalações  devem estar  convenientemente  subdivididas, considerando: a)pelo menos, 2 circuitos para iluminação; b)circuitos distintos para tomadas e iluminação; c)circuitos  distintos  para  aparelhos  de  grande  potência  ou  de  características especiais de funcionamento. d)estar convenientemente protegidas; e)os órgão de proteção e de comando devem interromper os condutores de fase (nunca devem cortar somente o neutro); f)as  proteções  das  instalações  elétricas  devem  ser  seletivas,  de  modo  a  que defeitos em determinado local do circuito não se repercuta noutro circuito; Numa  instalação  elétrica,  e  numa perspectiva  da  segurança, o quadro  elétrico é um elemento que assume grande relevância.
+
+RISCOS ELÉTRICOS
+
+Trata-se  de um  conjunto  de  aparelhos,  convenientemente  agrupados,  incluindo  as suas ligações, estruturas de suporte ou invólucro, destinado a proteger, comandar ou controlar instalações elétricas. Numa instalação os quadros elétricos são o primeiro elemento receptor e distribuidor de energia. Devem possuir: -Um condutor de proteção para ligação à terra;-Um     disjuntor magneto     térmico para     proteção     da     instalação     contra sobre aquecimentos, sobre intensidades e curto-circuitos; -Um  interruptor  diferencial  de  alta  sensibilidade  para  proteção  das  pessoas  contra  a eletrocussão. Proteção da instalação e canalizações Para eliminar ou reduzir os riscos elétricos na sua origem, é fundamental a adoção de uma série de medidas no sentido de proteger as instalações e canalizações elétricas, nomeadamente contra sobre intensidades provocadas por:• sobrecargas• curto-circuitos. Os dispositivos mais importantes, são:•  Contactores-disjuntores    providos    de    relés    térmicos    para    proteção    contra sobrecargas;• Relés eletromagnéticos e corta-circuitos fusíveis para proteção contra curto-circuitos. 
+
+Os trabalhos com  equipamentos  elétricos  em  atmosferas  explosivas  estão  na  origem de muitos incêndios e explosões. Nestes locais, os vários componentes da instalação, nomeadamente    lâmpadas    e    tomadas,    devem ter características    especiais antideflagrantes.3) Danos materiais -risco de incêndio devido à corrente elétrica Nas  instalações  onde  existe  grande  número  de  substâncias  inflamáveis,  a  corrente elétrica, pode estar na origem dos incêndios, normalmente devidos:-a sobre aquecimentos devidos  à  deterioração  do  material  isolante  dos condutores elétricos, por efeito de Joule, cuja expressão traduz a quantidade de  calor  produzida  em  determinado  condutor  quando  atravessado  por  uma corrente elétrica.
+                `,
+                2: ` <b>Módulo 2</b><br>
+                NR 10 - RISCOS ELÉTRICOS
+Módulo 2
+ RISCOS ELÉTRICOS
+
+3Q  = R.I2.  t  representando  Q,  a  quantidade  de  calor;  I,  a  intensidade  da corrente elétrica; t, o tempo de duração de passagem dessa corrente ao arco elétrico produzido por equipamentos ou por eletricidade estática;-defeitos  dos  equipamentos que  podem  provocar  faíscas  suscetíveis  de provocarem explosões quando a trabalhar em atmosferas explosivas.3.1) Causas de sobre aquecimento As   principais   causas   de   sobreaquecimento,   são   as   sobre intensidades,   ou   seja correntes  elétricas  de  intensidade  excessiva,  em  relação  ao  valor  calculado  para  o respetivo condutor. Estas sobre intensidades, por sua vez, podem ter origens diversas: Sobrecargas:  quando  a  corrente  que  percorre  o  condutor  é  superior  à intensidade para a qual ele foi projetado (intensidade nominal).Esta situação ocorre habitualmente quando se ligam cargas em excesso. Curto-circuito: quando  se  tocam  dois  condutores  entre  os  quais  existe  uma determinada  diferença  de  potencial  e  entre  os  quais  a  resistência  é muito pequena  ou  nula. Esta  situação  que  provoca  a  passagem  instantânea  de correntes  de  valor  elevado,  provoca  quase  sempre  a  fusão  dos  condutores, acompanhada de pequenas explosões. Defeitos   de   isolamento:   devidos   à   má   execução   da   instalação   ou   de equipamentos  elétricos,  ao  envelhecimento  do  material,  ou  ao  tratamento negligente dos cabos de ligação, permitindo que os veículos passem por cima provocando trilhamentos. Resistência de contacto Resultante  de  ligações  elétricas  através  de  contactos  imperfeitos,  como ligações mal apertadas ou terminais algo soltos, provocando uma resistência elevada à passagem da corrente.3.2) Arco elétrico O  arco  elétrico  que  pode  estar  na  origem  de  muitos  incêndios  numa  oficina,  resulta normalmente de:-Trabalhos de soldadura;-Faíscas produzidas pelo funcionamento anormal de equipamento elétrico;-Faíscas produzidas pela eletricidade estática e por descargas atmosféricas.
+                `,
+                3: ` <b>Módulo 3</b><br>
+                NR 10 - RISCOS ELÉTRICOS
+Módulo 3
+RISCOS ELÉTRICOS
+
+ Danos pessoais
+ Consequências da passagem de corrente elétrica pelo corpo humano Os principais efeitos fisiológicos da passagem da corrente elétrica pelo corpo humano, são os seguintes: -Percurso-Tetanização -Paragem respiratória-Queimaduras-Fibrilação ventricular Percurso O limiar de percepção representa o valor mínimo da corrente sentida por uma pessoa e que apenas representa uma sensação de formigueiro. A publicação IEC 479 (Comissão Eletrotécnica Internacional) aceita como valor médio do limiar de percurso 0,005 Ampere. Tetanização É um fenómeno decorrente da contração muscular produzida por um impulso elétrico. O limite de “não largar” define-se como o valor máximo da corrente que um indivíduo pode  suportar  e  largar  um  condutor  ativo  (condutor  afeto  à  passagem  da  corrente elétrica).Experiências indicam para este limite os seguintes valores médios: Em corrente alternada 50/60 Hz:… 10 mA para mulheres; 16 mA para homens; Em corrente contínua:…………………51 mA para mulheres; 76 mA para homens A CEI 479 indica como limiar de “largar”10 mA. Correntes  inferiores  a  este  limite,  mesmo  não  ocasionando  graves  lesões  diretas  no organismo,  podem  estar  na  origem  de  quedas,  acidentes  com  partes  móveis  de máquinas, etc. Paragem respiratória Correntes  superiores  ao  limite  de “largar” podem  provocar  nas  vítimas uma  paragem respiratória. A  passagem  da  corrente leva à  contração  dos  músculos  ligados  à respiração  e/ou  aos  centros  nervosos  que  os  comandam,  produzindo asfixia  que,
+
+Riscos Elétricos
+permanecendo  a  passagem  da  corrente,  levam  à  perda  de  consciência  e  morte  por sufocamento. Por este motivo, é necessário fazer respiração artificial num curto lapso de tempo (3 a 4 minutos no máximo) para evitar a asfixia e lesões irreversíveis no cérebro. Queimaduras Sendo  a  passagem  da  corrente  elétrica  acompanhada  por  desenvolvimento  de  calor, por  efeito  de  Joule,  uma das  consequências  mais  frequentes  dos  acidentes  elétricos são as queimaduras. Estas  queimaduras  revelam-se  mais  intensas  nas  zonas  de  entrada  e  saída  da corrente porque:•  a  pele,  quando  comparada  com  os  tecidos  internos,  apresenta  uma  elevada resistência elétrica;• à resistência da pele soma-se a resistência de contacto entre a pele e as partes sob tensão;• nos pontos de entrada e saída da corrente, sobretudo se as áreas de contacto forem pequenas, a densidade de corrente é maior. Existem  ainda  as  queimaduras  provocadas  pela  libertação  de  calor  por  arco  elétrico, como acontece na soldadura. Estas queimaduras que assumem graves proporções nos acidentes elétricos com alta tensão,  são  as  de mais  difícil  tratamento,  podendo  provocar  a morte  por  insuficiência renal. Fibrilação ventricular Este fenómeno  fisiológico  é  o  mais  grave  que  pode  ocorrer  devido  à  passagem  da corrente elétrica. Deve-se ao facto de aos impulsos elétricos naturais que provocam a contração  muscular  do  músculo  cardíaco,  se  sobrepor  uma  corrente  externa  que  faz com que as fibras ventriculares passem a contrair-se de modo descontrolado. Embora atualmente se  consiga  parar  o  fenómeno  com  um  desfibrilador,  para  efeitos práticos a fibrilação é considerada irreversível. Limiar da fibrilação: este limite é de difícil determinação porque há que ter em conta os seguintes aspetos:-Só uma parte da corrente que circula no corpo humano é que atinge o coração.
+                `,
+                4: ` <b>Módulo 4</b><br>
+                NR 10 - RISCOS ELÉTRICOS
+Módulo 4
+RISCOS ELÉTRICOS
+
+O  percurso da  corrente é  importante,  e  é necessário  introduzir  o  designado  fator  de corrente  de  coração  (F),  que  relaciona  a  intensidade  de  campo  elétrico  no  coração para  um  dado  percurso  de  corrente  com  a  intensidade  do  campo  elétrico  para  uma corrente  da  mesma  intensidade  circulando  da  mão  esquerda  aos  pés,  que  é  o percurso de referência. Assim,  por  exemplo,  uma  corrente  de  300  mA  de  mão  a  mão  (F=0,4)  tem  o  mesmo efeito que uma corrente de 120 mA (0,4 x 300) da mão esquerda aos pés. -A importância do momento do ciclo cardíaco em que se dá a passagem da corrente. Em  corrente  alternada  a  50  Hz existe  uma  redução  considerável  da  fibrilação  se  a circulação da corrente se prolongar para além de um ciclo cardíaco. Para  tempos  de  passagem  com  duração  inferior  a  0,1  seg.,  a  fibrilação  pode  ocorrer para correntes acima dos 500 mA. Correntes  elevadas  não  provocam,  de  um  modo  geral,  fibrilação;  podem,  no  entanto provocar  uma  paragem  cardíaca  ou  produzir  alterações  orgânicas  irreversíveis  no sistema cardíaco.5) Riscos de eletrocussão. Prevenção do choque elétrico. O choque elétrico é o efeito pato fisiológico que resulta da passagem de uma corrente elétrica através do corpo humano. Quando o resultado deste efeito é a morte é habitual designar-se por eletrocussão. A  possibilidade  da  passagem  da  corrente  elétrica  pelo  corpo  humano  depende  muito das   características   da   instalação   elétrica   e   respetivos   circuitos,   de   algumas características   (normais   e/ou   anormais)   de   funcionamento   dos   mesmos,   dos dispositivos de proteção neles existentes ou não, e do tipo de aparelhos a eles ligados.5.1) Efeitos do choque elétrico Estes efeitos dependem fundamentalmente dos seguintes fatores:• Tipo de corrente• Intensidade da corrente• Tempo do contacto• Percurso da corrente• Resistência do corpo (humidade da pele)Tipo de corrente.
+
+RISCOS ELÉTRICOS
+
+Existem dois tipos de corrente: alternada e contínua. Para intensidades iguais o risco representado pela corrente alternada é maior. Para a corrente alternada o risco diminui com o aumento da frequência (em Portugal, a frequência de distribuição é de 50 Hz).Intensidade da corrente A intensidade é o fator mais importante no fenómeno do choque elétrico. A CEI 479 -1, define 5 zonas de efeitos para correntes alternadas de 15 a 100 HZ, considerando pessoas de 50 Kg e um trajeto de corrente entre mão-mão ou mão-pé. Efeitos patológicos da corrente•  De  0,1  a  0,5  mA -leve  percurso  superficial,  normalmente  sem  nenhum  efeito patológico (zona 1);• De 0,5 a 10 mA -pode provocar uma paralisia ligeira nos músculos dos braços com princípio de tetanização (zona 2);• De 10 a 30 mA -não se verifica nenhum efeito fisiológico perigoso se a corrente for interrompida no prazo de 5 segundos (zona 2 e 3);•  De  30  a  500  mA -provoca  a  paralisia  dos  músculos  do  tórax  com  sensação  de sufocamento; existe ainda a possibilidade de fibrilação cardíaca (zona 4);• Superior a 500 mA -provoca lesões cardíacas irreversíveis ou mortais. -Atente-se  que,  em  determinadas  circunstâncias,  correntes  entre  25 -30  mA  já  são perigosas. Tempo de contacto Como já se observou, existe uma relação direta entre a gravidade da lesão e o tempo de  contacto  durante  o  qual  a  pessoa  está  submetida  ao  contacto  elétrico.  Decorre deste facto a importância da proteção diferencial. Percurso da corrente Já se viu como este percurso é importante para o fenómeno da fibrilação. Resistência ou impedância do corpo O  corpo  humano  é  constituído  por  um  conjunto  de  líquidos  e  tecidos  orgânicos  de resistividade  variável.
+                `,
+            };
+
+            const videoContainer = document.getElementById('video-container');
+            const moduleContent = document.getElementById('module-content');
+
+            videoContainer.style.display = 'none'; // Esconde o vídeo
+            moduleContent.innerHTML = content[moduleNumber] || 'Módulo não encontrado.';
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        #video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        #buttons-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #000000;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #module-content {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        h3, h4 {
+            text-align: center;
+        }
+        #whatsapp-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</body>
+</html>

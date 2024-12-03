@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo e Módulos</title>
+
+</head>
+<body>
+    <div id="video-container">
+        <iframe id="video-frame" src="https://drive.google.com/file/d/1HRUkykOz1gDwnyrAFo3pr7VfCV-w8uiJ/preview" width="640" height="280" allow="autoplay"></iframe>
+        <h3>Wi-fi-vídeo opcional<br>Módulo abaixo</h3>
+    </div>
+
+    <div id="module-content">
+        <!-- Content will appear here -->
+    </div>
+
+    <div id="buttons-container">
+        <button onclick="showModuleContent(1)">Módulo 1</button>
+        <button onclick="showModuleContent(2)">Módulo 2</button>
+        <button onclick="showModuleContent(3)">Módulo 3</button>
+        <!-- <button onclick="showModuleContent(4)">Módulo 4</button> -->
+    </div>
+
+
+
+    <h4>Dúvidas? Fale com o instrutor</h4>
+    <div id="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=5521973561012&text=Ol%C3%A1%20professor.%20Preciso%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20mat%C3%A9ria%20do%20curso">
+            <img src="/src/assets/img/capa de modulos/falecomoinstrutor.png" alt="Fale com o instrutor" width="300">
+        </a>
+    </div>
+
+    <script>
+        function showModuleContent(moduleNumber) {
+            const content = {
+                1: ` <b>Módulo 1</b><br>
+NR 35
+Trabalho Em Alturas
+Módulo 1
+Atividades em altura representam um grave risco, portanto, a NR 35 foi elaborada com o intuito de reduzir os acidentes relacionados as atividades.
+
+Os trabalhos realizados em altura estão presentes em quase todos os setores e áreas do ambiente de trabalho.
+
+Acidentes ocorridos em trabalhos em altura, ao envolver um trabalhador, tem um potencial de causar lesões gravíssimas, debilitações físicas permanentes ou, no pior dos casos, óbito.
+
+Desta forma, a implementação da NR 35 tem o intuito de reduzir e minimizar qualquer possível dano causado pelos acidentes do trabalho em altura. É primordial que as atividades sejam tratadas como um dos principais riscos da frente de trabalho, e deve ter atenção e foco total dos trabalhadores, principalmente dos técnicos e engenheiros de segurança do trabalho.
+
+O que é NR 35?
+A Norma Regulamentadora 35 da Portaria 3.214 de 1978, é o conjunto de normas de segurança que regem todos os trabalhos realizados em alturas, sendo considerado trabalho em altura, qualquer atividade que esteja acima de dois metros (2m) da altura do piso.
+
+A NR 35 estabelece todos os parâmetros mínimos de segurança que devem ser seguidos, bem como as diretrizes para a realização destas atividades, com o intuito de prevenir acidentes com potencial de risco de vida ou lesões gravíssimas ao trabalhador.
+
+Para que serve a NR 35?
+A NR 35 serve para orientar e definir quais são os requisitos mínimos legais para a realização de atividades em altura elevada. A partir dela são definidos os critérios para o planejamento, a organização e a execução das atividades.
+
+A NR 35 também define quais são os treinamentos exigidos para a realização da atividade, quais exames devem ser constados no PCMSO para garantir que o trabalhador está apto a realizar atividades em alturas elevadas, quais são as medidas de proteção coletiva e individual (EPI e EPC) que devem ser adotadas, dentre outras informações e requisitos legais.
+
+ Responsabilidades
+De acordo com o artigo 3.5.2.1 da NR 35, cabe ao empregador:
+
+implementar medidas adequadas de proteção sempre que houver a realização de atividades em altura;
+emitir a Permissão de Trabalho e a ART;
+criar e implementar um procedimento operacional para atividades em altura realizadas frequentemente na empresa;
+treinar e qualificar todos os trabalhadores que realizem atividades em altura, garantindo que os mesmos estejam cientes dos riscos da atividade e das medidas de controle implementadas;
+garantir que o local aonde será realizado as atividades seja analisado, criado um plano de execução e implementado as medidas de controle previamente a execução das atividades;
+todas as atividades em altura só devem ser iniciadas após a adoção das medidas de controle previstas na NR 35;
+suspender as atividades sempre que constatado condição de risco não prevista, e que não seja possível neutraliza-la ou elimina-la imediatamente;
+todos os trabalhos devem ser supervisionados, e a sua forma de execução deve ser baseada na análise dos riscos presentes na atividade;
+armazenar todas as documentações referidas na NR 35, para fins de fiscalização.
+ 
+
+Já os itens do artigo 3.5.2.2 definem quais são as responsabilidades do trabalhador, sendo estas:
+
+cumprir com todos os requisitos para a realização segura das atividades em altura, inclusive procedimentos expedidos pelo empregador;
+colaborar para a implementação das medidas de controle e disposições da NR 35;
+zelar pela segurança comum das pessoas, incluindo a si mesmo, que possam ser afetadas pelas suas ações durante a execução da atividade.
+Quais atividades exigem a NR 35?
+Todas as atividades realizadas em níveis acima do solo, ou do nível regular do piso, com uma elevação igual ou superior a 2 metros, representando desta forma, riscos de acidentes e quedas com potencial de causar lesões e danos graves a saúde do trabalhador, podendo chegar ao óbito.
+                `,
+                2: ` <b>Módulo 2</b><br>
+                NR 35
+Trabalho Em Alturas
+Módulo 2
+Treinamento e cursos de NR 35
+Toda a atividade em altura deve ser realizada por profissional devidamente qualificado para tal. Desta forma, segundo o artigo 35.3.2 da NR 35, considera-se trabalhador qualificado, aquele que foi submetido e aprovado em treinamento teórico e prático, com uma carga mínima de oito horas, e cujo conteúdo deve, no mínimo, incluir:
+
+Normas de segurança para atividades em altura;
+Analise das condições de risco presentes na atividade, e seus impeditivos;
+riscos potenciais da atividade, suas medidas de prevenção e controle, e sua aplicação;
+procedimentos de proteção coletiva, incluindo sistemas e equipamentos;
+seleção, inspeção e conservação dos EPIs para trabalho em altura;
+análise dos acidentes típicos ocorridos nas atividades em altura;
+técnicas de resgate e primeiro socorros, bem como noções sobre como se conduzir em situações de emergência.
+Já o artigo 35.3.6 estabelece que todos os treinamentos devem ser ministrados por instrutores com proficiência comprovada no assunto, sob a responsabilidade de um profissional qualificado em segurança do trabalho.
+
+Validade
+Com a recente alteração das NRs, a validade dos treinamentos passou por alterações, sendo regidas atualmente pela Portaria N.º 915, de 30 de Julho de 2019.
+
+De acordo com as novas regras, o treinamento poderá ser reutilizado, desde que a sua última validação tenha ocorrido dentro do período de 2 anos.
+
+A norma também cita que os treinamentos devem ser refeitos sempre que:
+
+ocorrer alterações de procedimentos, operações ou condições de trabalho, ou que ocorra uma mudança dos riscos ocupacionais;
+sempre que houver um acidente grave ou fatal;
+em ocasião de retorno ao trabalho após afastamento superior a 180 dias.
+A reutilização dos treinamentos deve respeitar sempre a data de validação do treinamento mais antigo do conjunto de treinamentos realizado pelo trabalhador.
+
+Resumo da NR 35 Atualizada 2019
+A Norma Regulamentadora 35 estabelece os requisitos mínimos e as medidas de proteção necessárias para realizar atividades em altura, com o intuito de prevenir e minimizar danos ocorridos por acidentes nestas atividades.
+
+Considera-se, perante a NR 35, atividades em altura aqueles realizados acima de 2 metros do nível inferior, aonde exista o risco de queda.
+
+A norma estabelece que as realizações das atividades sejam realizadas por profissionais devidamente capacitados, seja realizado uma análise de risco (AR) e que toda a atividade seja supervisionada.
+
+Devem ser implementadas medidas de proteção coletiva (EPC) e individual (EPI) adequadas as necessidades exigidas para a realização da atividade.
+
+Os trabalhadores que executam atividades em altura devem manter um registro de saúde ocupacional atualizado, com seus exames sendo parte integrante do PCMSO da empresa.
+
+Os exames e avaliações devem ser realizados periodicamente, de acordo com o agendamento do PCMSO. As aptidões devem ser registradas na ASO do trabalhador.
+
+Os trabalhos em altura devem considerar as influências externas que possam alterar as condições de trabalho já previstas na Análise de Risco.
+
+O planejamento das atividades deve sempre seguir a ordem de:
+
+utilizar outros métodos de trabalho, sempre que possível, evitando a realização das atividades em altura;
+implementar medidas de controle que anulem totalmente o risco de queda, e na sua impossibilidade, que minimizem as consequências das quedas;
+Em todas as atividades em altura, é obrigatório o uso de proteção contra quedas. O sistema deve possuir características, das quais:
+
+ser adequado e implementado de acordo com a tarefa que será executada;
+considerar os riscos adicionais que o trabalhador esteja exposto, bem como os da natureza da atividade, e que estejam descritos na Análise de Risco;
+possuir características que suportem uma queda, através da resistência para suportar a força máxima aplicável.
+atender as normas de segurança nacionais, e caso não exista uma especificada norma, seguir as normativas de segurança internacionais;
+realizar uma inspeção sistemática em todos os elementos compatíveis.
+                `,
+                3: ` <b>Módulo 3</b><br>
+                NR 35
+Trabalho Em Alturas
+Módulo 3
+Check list de trabalho em altura (NR35)
+
+
+1. Você identifica o trabalho em altura como qualquer atividade realizada acima de
+1,80 metros?
+
+
+2. Você conhece os perigos e riscos gerados ao trabalhar em alturas e aplica
+medidas de controle?
+
+
+3. Você é qualificado e está em conformidade com os regulamentos internos de
+trabalho em altura?
+
+
+4. Você tem os exames médicos correspondentes que lhe permitem trabalhar em
+altura?
+
+
+5. Você verificou a eficácia do sistema anti-queda, usou-o e permaneceu
+permanentemente ligado ao sistema?
+
+
+6. Você verificou a eficácia do sistema anti-queda, usou-o e permaneceu
+permanentemente ligado ao sistema?
+
+
+7. Existe um sistema de registro e rotulagem para inspeção de equipamentos de
+apoio, superfícies de trabalho temporário e EPI?
+
+
+8. Você tem meios para impedir que ferramentas, materiais e outros objetos caiam
+da altura?
+
+
+9. Os furos e aberturas no piso são protegidos por tampas ou por qualquer outro
+dispositivo, conforme apropriado?
+
+
+10. Os equipamentos anti-queda são certificados?
+
+
+11. O equipamento garante a proteção das bordas e / ou pontos de ancoragem?
+
+
+12. As instalações contam com restrições que impedem caminhar sobre superfícies
+construídas em material transparente / acrílica?
+                `,
+                4: ` <b>Módulo 4</b><br>
+                
+                `,
+            };
+
+            const videoContainer = document.getElementById('video-container');
+            const moduleContent = document.getElementById('module-content');
+
+            videoContainer.style.display = 'none'; // Esconde o vídeo
+            moduleContent.innerHTML = content[moduleNumber] || 'Módulo não encontrado.';
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        #video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        #buttons-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #000000;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #module-content {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        h3, h4 {
+            text-align: center;
+        }
+        #whatsapp-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</body>
+</html>

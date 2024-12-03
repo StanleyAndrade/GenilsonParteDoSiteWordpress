@@ -45,6 +45,10 @@
     background-color: white;
 }
 
+#corre {
+    width: 100px;
+}
+
 @media(max-width:950px){
     #img_losango{
         width: 96%;

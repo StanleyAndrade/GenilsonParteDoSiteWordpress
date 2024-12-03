@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://via.placeholder.com/100" alt="Logo">
+        <h4>Preencha todos os formulários</h4>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="text" name="username" placeholder="Nome de usuário" required>
+            <input type="text" name="fullname" placeholder="Nome completo" required>
+            <input type="text" name="cpf_cnpj" placeholder="CPF ou CNPJ" required>
+            <input type="text" name="phone" placeholder="Whatsapp" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Senha" required>
+
+            <!-- Campos ocultos necessários -->
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="accessKey" value="91842200-0b17-4fa6-a9fd-84098f62897b">
+            <input type="hidden" name="subject" value="Cadastro de novo usuário">
+            <input type="hidden" name="replyTo" value="treinamentonrs@gmail.com">
+            <input type="hidden" name="redirectTo" value="https://cestsegtrabalho.com.br/index.php/curso-nr-11-ponte-rolante/">
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>

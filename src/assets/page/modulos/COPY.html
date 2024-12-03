@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo e Módulos</title>
+
+</head>
+<body>
+    <div id="video-container">
+        <iframe id="video-frame" src="https://drive.google.com/file/d/1WhP_HadoZ86Ol3qjyUEVU4QThkTcTQEH/preview" width="640" height="280" allow="autoplay"></iframe>
+        <h3>Wi-fi-vídeo opcional<br>Módulo abaixo</h3>
+    </div>
+
+    <div id="module-content">
+        <!-- Content will appear here -->
+    </div>
+
+    <div id="buttons-container">
+        <button onclick="showModuleContent(1)">Módulo 1</button>
+        <button onclick="showModuleContent(2)">Módulo 2</button>
+        <button onclick="showModuleContent(3)">Módulo 3</button>
+        <button onclick="showModuleContent(4)">Módulo 4</button>
+    </div>
+
+
+
+    <h4>Dúvidas? Fale com o instrutor</h4>
+    <div id="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=5521973561012&text=Ol%C3%A1%20professor.%20Preciso%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20mat%C3%A9ria%20do%20curso">
+            <img src="/src/assets/img/capa de modulos/falecomoinstrutor.png" alt="Fale com o instrutor" width="300">
+        </a>
+    </div>
+
+    <script>
+        function showModuleContent(moduleNumber) {
+            const content = {
+                1: ` <b>Módulo 1</b><br>
+
+                `,
+                2: ` <b>Módulo 2</b><br>
+                
+                `,
+                3: ` <b>Módulo 3</b><br>
+                
+                `,
+                4: ` <b>Módulo 4</b><br>
+                
+                `,
+            };
+
+            const videoContainer = document.getElementById('video-container');
+            const moduleContent = document.getElementById('module-content');
+
+            videoContainer.style.display = 'none'; // Esconde o vídeo
+            moduleContent.innerHTML = content[moduleNumber] || 'Módulo não encontrado.';
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        #video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        iframe {
+            max-width: 100%;
+            height: auto;
+        }
+        #buttons-container {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            margin: 5px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #000000;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #module-content {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        h3, h4 {
+            text-align: center;
+        }
+        #whatsapp-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</body>
+</html>
