@@ -97,8 +97,10 @@ body {
     justify-content: space-between;
     background-color: #1ABC9C;
     padding-top: 4px;
-    margin: 0px;
+    margin: 0 auto;
+    max-width: 100%;
     flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    box-sizing: border-box;
 }
 
 .alinharColuna {
@@ -106,15 +108,16 @@ body {
 }
 
 .imglogo {
-    width: 300px;
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    width: 100%;
+    max-width: 300px; /* Garante que a imagem não ultrapasse a largura da tela */
     height: auto;
 }
 
 .imgmao {
-    width: 200px;
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    width: 100%;
+    max-width: 150px; /* Garante que a imagem não ultrapasse a largura da tela */
     height: auto;
+    margin-top: 14px;
 }
 
 .cards {
@@ -126,14 +129,17 @@ body {
 }
 
 h3 {
+    margin-top: 20px;
     font-size: 30px;
-    margin-bottom: -20px;
+    margin-bottom: -16px;
     flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    word-wrap: break-word;
 }
 
 h5 {
     font-size: 20px;
     flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    word-wrap: break-word;
 }
 
 img {
@@ -184,7 +190,7 @@ img {
         text-align: center;
     }
     .imglogo {
-        width: 100px; /* Ajusta ainda mais o tamanho da imagem em telas muito pequenas */
+        width: 90px; /* Ajusta ainda mais o tamanho da imagem em telas muito pequenas */
     }
 
     .imgmao {
@@ -192,7 +198,7 @@ img {
     }
 
     h3 {
-        font-size: 10px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 8px; /* Ajusta o tamanho da fonte para telas menores */
         
     }
 
