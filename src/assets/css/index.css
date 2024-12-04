@@ -3,6 +3,53 @@ body {
     padding: 0;
 }
 
+/* Inicio Carrossel*/
+
+.carousel {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item {
+    min-width: 100%;
+    height: 300px;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+
+/*Fim CArrossel*/
+
 /* Estilo do container do slide */
 .slide-container {
     width: 100%;
@@ -90,7 +137,7 @@ h5 {
 }
 
 img {
-    max-width: 60%;
+    max-width: 100%;
     height: auto;
     display: block; /* Evita espaçamento estranho ao redor das imagens */
 }
@@ -110,7 +157,7 @@ img {
     }
 
     .imgmao {
-        width: 50px; /* Reduz o tamanho da imagem em telas menores */
+        width: 30px; /* Reduz o tamanho da imagem em telas menores */
     }
 
     .cards {
@@ -124,25 +171,33 @@ img {
     }
 
     h5 {
-        font-size: 15px; /* Diminui o tamanho da fonte do subtítulo */
+        font-size: 10px; /* Diminui o tamanho da fonte do subtítulo */
         flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
     }
 }
 
 @media (max-width: 480px) {
+    .coluna1-father {
+        flex-direction: row; /* Empilha os elementos verticalmente */
+        padding-bottom: 4px;
+        justify-content: space-between;
+        text-align: center;
+    }
     .imglogo {
         width: 100px; /* Ajusta ainda mais o tamanho da imagem em telas muito pequenas */
     }
 
     .imgmao {
-        width: 100px;
+        width: 40px;
     }
 
     h3 {
         font-size: 10px; /* Ajusta o tamanho da fonte para telas menores */
+        
     }
 
     h5 {
-        font-size: 15px;
+        font-size: 10px;
+        
     }
 }
