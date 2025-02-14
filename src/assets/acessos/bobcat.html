@@ -15,12 +15,23 @@
     <h3><b>Preencha os dados abaixo e faça a prova <br>
             Nota mínima 80% <br>
             Após aprovação já está registrado</b></h3><br>
-    <form id="submit" action="#" name="form-contact">
-        <input type="text" id="name" placeholder="Nome completo:" required><br>
-        <input type="text" id="whatsapp" placeholder="Whatsapp:" required><br>
-        <input type="email" id="email" placeholder="Email:" required><br>
-        <input type="text" id="nome_empresa" placeholder="Nome da empresa: (Opcional)"><br>
-        <input type="text" id="cpf" placeholder="CPF:" required><br>
+<script>
+                function validarSenha() {
+                    var senha = document.getElementById("senha").value;
+                    if (senha !== 'Cest2p') {
+                        alert("Senha incorreta! Tente novamente.");
+                        return false; // Impede o envio do formulário
+                    }
+                    return true; // Permite o envio se a senha estiver correta
+                }
+                </script>
+               <form id="submit" action="#" name="form-contact" onsubmit="return validarSenha()">
+               <input type="text" id="name" placeholder="Nome completo:" required><br>
+               <input type="text" id="cpf" placeholder="CPF:" required><br>
+               <input type="text" id="nome_empresa" placeholder="Nome da empresa: (Opcional)"><br>
+               <input type="text" id="whatsapp" placeholder="Whatsapp:" required><br>
+               <input type="email" id="email" placeholder="Email:" required><br>
+               <input type="text" id="senha" placeholder="Digite a senha" required>
         <br> <b> Data </b> <br>
         <input type="date" id="data_Genilson"><br><br>
         <input type="submit" value="Enviar" id="submit">
@@ -55,6 +66,9 @@ const dataAtual = `Aluno concluiu a prova em ${dia}/${mes}/${ano} às ${hora}:${
         // Corpo do email com tudo que será enviado para o Email
         submit.addEventListener('submit', (e) => {
             e.preventDefault();
+            if (!validarSenha()) {
+            return; // Se a senha estiver errada, interrompe tudo aqui
+            }
             let ebody = 
             `<div><img src="https://cestsegtrabalho.com.br/wp-content/uploads/2022/09/logo-e1663851774609.png" width="100%"></div>
             <br><br>

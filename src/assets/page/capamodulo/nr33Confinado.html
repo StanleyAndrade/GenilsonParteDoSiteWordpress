@@ -32,9 +32,12 @@ Esta Norma tem como objetivo estabelecer OS REQUISITOS MÍNIMOS PARA IDENTIFICA�
                     }
                
                 </style>
-               <form action="https://api.staticforms.xyz/submit" method="post" >
-                       <input type="text" name="name" placeholder="Nome" required>
-                       <input type="text" name="phone" placeholder="Whatsapp" required/>
+               <form action="https://api.staticforms.xyz/submit" method="post" onsubmit="return validarSenha()">
+                <input type="text" name="$Nome" placeholder="Nome" required>
+                <input type="text" name="$CPF" placeholder="CPF:" required> <!-- Corrigido -->
+                <input type="text" name="$Empresa ou Particular" placeholder="Nome da empresa ou Particular"> <!-- Corrigido -->
+                <input type="text" name="$Whatsapp" placeholder="Whatsapp" required/>
+                <input type="text" id="senha" placeholder="Digite a senha" required>
                        <input type="text" name="honeypot" style="display:none">
                        <input type="hidden" name="accessKey" value="91842200-0b17-4fa6-a9fd-84098f62897b">
                        <input type="hidden" name="subject" value="Um aluno começou a estudar" />
@@ -42,7 +45,16 @@ Esta Norma tem como objetivo estabelecer OS REQUISITOS MÍNIMOS PARA IDENTIFICA�
                        <input type="hidden" name="redirectTo" value="https://www.cestsegtrabalho.com.br/src/assets/page/modulos/nr33Confinado.html">
                        <input type="submit" value="Estudar e Aguardar até a Prova"/>
                </form>
-                  
+               <script>
+                function validarSenha() {
+                    var senha = document.getElementById("senha").value;
+                    if (senha !== 'Cest2e') {
+                        alert("Senha incorreta! Tente novamente.");
+                        return false; // Impede o envio do formulário
+                    }
+                    return true; // Permite o envio se a senha estiver correta
+                }
+                </script>
                </header>                                                                                                                                              
         </div>
     </div>
