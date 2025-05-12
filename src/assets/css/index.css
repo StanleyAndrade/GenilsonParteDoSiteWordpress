@@ -147,6 +147,21 @@ img {
     display: block; /* Evita espaçamento estranho ao redor das imagens */
 }
 
+.div-fazerprova{
+
+}
+
+#link-fazerprova{
+    align-items: center;
+}
+
+#btn-fazerprova{
+    text-align: center;
+    align-items: center;
+    padding: 2px;
+    padding-bottom: 10px;
+}
+
 
 /* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
@@ -178,6 +193,18 @@ img {
     h5 {
         font-size: 10px; /* Diminui o tamanho da fonte do subtítulo */
         flex-wrap: wrap; /* Permite que os elementos se ajustem em telas menores */
+    }
+
+    #link-fazerprova{
+    align-items: center;
+    }
+
+    #btn-fazerprova{
+        text-align: center;
+        align-items: center;
+        padding: 2px;
+        padding-bottom: 10px;
+        font-size: 25px;
     }
 }
 
