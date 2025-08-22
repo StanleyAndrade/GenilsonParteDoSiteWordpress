@@ -44,7 +44,7 @@ O Curso de NR 11 - RETRO / PÁ tem como objetivo capacitar o profissional na ope
                        <input type="hidden" name="accessKey" value="91842200-0b17-4fa6-a9fd-84098f62897b">
                        <input type="hidden" name="subject" value="Um aluno começou a estudar" />
                        <input type="hidden" name="replyTo" value="treinamentonrs@gmail.com">
-                       <input type="hidden" name="redirectTo" value="https://www.cestsegtrabalho.com.br/src/assets/page/modulos/nr11Retro-pa.html">
+                       <input type="hidden" name="redirectTo" value="">
                        <input type="submit" value="Estudar e Aguardar até a Prova"/>
                </form>
                <script>
@@ -54,7 +54,8 @@ O Curso de NR 11 - RETRO / PÁ tem como objetivo capacitar o profissional na ope
                         alert("Senha incorreta! Tente novamente.");
                         return false; // Impede o envio do formulário
                     }
-                    return true; // Permite o envio se a senha estiver correta
+                    window.location.href = "https://www.cestsegtrabalho.com.br/src/assets/page/modulos/nr11Retro-pa.html";
+                    return false; // Permite o envio se a senha estiver correta // Permite o envio se a senha estiver correta
                 }
                 </script>
                </header>                                                                                                
